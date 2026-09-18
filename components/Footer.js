@@ -1,0 +1,56 @@
+import { site } from "../lib/site";
+
+export default function Footer() {
+  const year = new Date().getFullYear();
+  return (
+    <footer>
+      <div className="wrap">
+        <div className="grid g4">
+          <div>
+            <h4>{site.name}</h4>
+            <p style={{ fontSize: ".92rem", color: "#9aa3ae" }}>
+              {site.role} based in {site.city}, Pakistan. Local SEO for single-location
+              businesses, multi-location groups and agencies who need delivery under
+              their own brand.
+            </p>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <ul>
+              <li>Google Business Profile management</li>
+              <li>Profile suspension recovery</li>
+              <li>Map pack &amp; geo-grid ranking</li>
+              <li>Citation &amp; NAP cleanup</li>
+              <li>AI Overview visibility</li>
+              <li>Multi-location local SEO</li>
+              <li>White label for agencies</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Areas served</h4>
+            <ul>
+              <li>Pakistan — Lahore, Karachi, Islamabad</li>
+              <li>United Kingdom</li>
+              <li>United States &amp; Canada</li>
+              <li>UAE &amp; Saudi Arabia</li>
+              <li>Australia</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <ul>
+              <li><a href={`mailto:${site.email}`}>{site.email}</a></li>
+              <li><a href={`tel:${site.phone.replace(/[^+\d]/g, "")}`}>{site.phone}</a></li>
+              <li><a href={`https://wa.me/${site.whatsapp}`} rel="nofollow">WhatsApp</a></li>
+              <li>{site.timezone}</li>
+            </ul>
+          </div>
+        </div>
+        <div className="legal">
+          © {year} {site.name}. No rankings are guaranteed, by me or by anyone else.
+          Google, Google Maps and Google Business Profile are trademarks of Google LLC.
+        </div>
+      </div>
+    </footer>
+  );
+}
