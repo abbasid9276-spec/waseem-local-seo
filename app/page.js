@@ -29,7 +29,7 @@ export default function Home() {
               promise of a number one ranking, because nobody can honestly make one.
             </p>
             <p>
-              I am {site.name}, a local SEO consultant based in {site.city}, Pakistan.
+              I am {site.name}, a local SEO consultant based in {site.countryName}.
               Most of my clients are outside Pakistan: service businesses, clinics and
               law firms in the UK, United States, Canada and the Gulf, plus agencies who
               need local SEO delivered under their own brand. The work is narrow on
@@ -594,7 +594,7 @@ export default function Home() {
             <p className="eyebrow">About</p>
             <h2>Who is doing the work</h2>
             <p>
-              I am {site.name}, based in {site.city}. I work on local search only. That
+              I am {site.name}, based in {site.countryName}. I work on local search only. That
               narrowness is the point: local ranking has its own factor weights, its own
               policy regime that changed materially in 2026, and its own set of ways to
               get a business suspended, and it is not something you keep current with as a
