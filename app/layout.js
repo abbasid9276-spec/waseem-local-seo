@@ -46,8 +46,6 @@ function schema() {
     ],
     address: {
       "@type": "PostalAddress",
-      addressLocality: site.city,
-      addressRegion: site.region,
       addressCountry: site.country,
     },
     sameAs: site.profiles,
@@ -68,8 +66,6 @@ function schema() {
     currenciesAccepted: "PKR, USD, GBP",
     address: {
       "@type": "PostalAddress",
-      addressLocality: site.city,
-      addressRegion: site.region,
       addressCountry: site.country,
     },
     areaServed: [
