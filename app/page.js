@@ -205,7 +205,18 @@ export default function Home() {
               I do not offer general digital marketing, paid ads, or social media
               management. Local search is a narrow discipline with its own ranking
               system, its own policy regime and its own failure modes, and it rewards
-              depth over breadth.
+              depth over breadth. If you are in Pakistan, the city pages set out what
+              is specific to each market:{" "}
+              <a href="/local-seo-services-in-lahore">Lahore</a>,{" "}
+              <a href="/local-seo-services-in-karachi">Karachi</a>,{" "}
+              <a href="/local-seo-services-in-islamabad">Islamabad</a>,{" "}
+              <a href="/local-seo-services-in-faisalabad">Faisalabad</a> and{" "}
+              <a href="/local-seo-services-in-multan">Multan</a>. Off-site authority is
+              covered separately under{" "}
+              <a href="/guest-posting-services-in-pakistan">
+                guest posting and editorial placement
+              </a>
+              .
             </p>
             <div className="grid g3">
               <div className="card">
