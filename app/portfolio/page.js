@@ -62,7 +62,7 @@ export default function Portfolio() {
     "https://mail.google.com/mail/?view=cm&fs=1&to=" +
     encodeURIComponent(site.email) +
     "&su=" +
-    encodeURIComponent("Free geo-grid check") +
+    encodeURIComponent("Free GMB Audit") +
     "&body=" +
     encodeURIComponent(
       "Business name:\nCity:\nWebsite:\nWhat you want more of:\n"
@@ -93,7 +93,7 @@ export default function Portfolio() {
             </p>
             <div className="btn-row">
               <a className="btn btn-primary" href={gmail} target="_blank" rel="noopener nofollow">
-                Email me for a free geo-grid check
+                Email Me for Free GMB Audit
               </a>
             </div>
           </div>
