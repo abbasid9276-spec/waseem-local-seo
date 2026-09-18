@@ -17,14 +17,14 @@ const DIMS = {
 };
 
 export const metadata = {
-  title: "Portfolio — Local SEO Results | Waseem Abbas",
+  title: "Client Results & Case Studies | WaseemRanker",
   description:
     "Real client results from Google Search Console, Google Business Profile, Bing and GA4: map pack rankings, steady enquiry flow and consistent customers for local service businesses.",
   alternates: { canonical: "/portfolio" },
   openGraph: {
     type: "website",
     url: `${site.url}/portfolio`,
-    title: "Portfolio — Local SEO Results | Waseem Abbas",
+    title: "Client Results & Case Studies | WaseemRanker",
     description:
       "Dated screenshots from client accounts. Clicks, impressions, direction requests and engagement — and what each one meant for the business.",
   },
@@ -39,7 +39,7 @@ function schema() {
         "@type": "CollectionPage",
         "@id": `${url}#page`,
         url,
-        name: "Local SEO Portfolio",
+        name: "Client Results",
         about: { "@id": `${site.url}/#person` },
         description:
           "Client results from local SEO engagements, evidenced with dated screenshots from Google Search Console, Google Business Profile, Bing Webmaster Tools and Google Analytics 4.",
@@ -58,6 +58,15 @@ function schema() {
 
 export default function Portfolio() {
   const wa = `https://wa.me/${site.whatsapp}`;
+  const gmail =
+    "https://mail.google.com/mail/?view=cm&fs=1&to=" +
+    encodeURIComponent(site.email) +
+    "&su=" +
+    encodeURIComponent("Free geo-grid check") +
+    "&body=" +
+    encodeURIComponent(
+      "Business name:\nCity:\nWebsite:\nWhat you want more of:\n"
+    );
 
   return (
     <>
@@ -68,30 +77,24 @@ export default function Portfolio() {
       <Header />
       <main>
 
-        <section className="hero">
+        <section className="hero hero-center">
           <div className="wrap">
-            <nav className="crumb" aria-label="Breadcrumb">
-              <a href="/">Local SEO Expert in Pakistan</a> <span>/</span> Portfolio
-            </nav>
             <h1>Results, with the screenshots to match</h1>
             <p className="lede">
               Every figure on this page is read straight from a client account —
               Google Search Console, Google Business Profile, Bing Webmaster Tools and
               GA4. No rounded-up claims, no numbers I cannot produce the export for.
             </p>
-            <p>
+            <p className="lede">
               Rankings are not the product. Consistent leads are. Each case below shows
               the chart, the period it covers, and what the change actually meant for
               the owner: more enquiries, arriving steadily, from people already looking
-              to buy. The approach behind all of it, including published pricing, is on
-              my main page for anyone comparing a{" "}
-              <a href="/">local SEO expert in Pakistan</a>.
+              to buy.
             </p>
             <div className="btn-row">
-              <a className="btn btn-primary" href={wa} rel="nofollow">
-                Get a free geo-grid check
+              <a className="btn btn-primary" href={gmail} target="_blank" rel="noopener nofollow">
+                Email me for a free geo-grid check
               </a>
-              <a className="btn btn-ghost" href="/#pricing">See published pricing</a>
             </div>
           </div>
         </section>
