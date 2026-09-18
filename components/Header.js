@@ -9,7 +9,7 @@ export default function Header() {
           <small>Map pack &amp; AI search · {site.city}</small>
         </a>
         <nav className="nav" aria-label="Primary">
-          <a href="/portfolio">Results</a>
+          <a href="/portfolio">Portfolio</a>
           <a href="/#services">Services</a>
           <a href="/#ai-search">AI search</a>
           <a href="/#pricing">Pricing</a>
