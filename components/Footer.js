@@ -24,6 +24,7 @@ export default function Footer() {
               <li>AI Overview visibility</li>
               <li>Multi-location local SEO</li>
               <li>White label for agencies</li>
+              <li><a href="/portfolio">Results &amp; case studies</a></li>
             </ul>
           </div>
           <div>
