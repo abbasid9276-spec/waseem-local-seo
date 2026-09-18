@@ -7,11 +7,11 @@ export default function Footer() {
       <div className="wrap">
         <div className="grid g4">
           <div>
-            <h4>{site.name}</h4>
+            <h4>{site.brand}</h4>
             <p style={{ fontSize: ".92rem", color: "#9aa3ae" }}>
-              {site.role} based in {site.city}, Pakistan. Local SEO for single-location
-              businesses, multi-location groups and agencies who need delivery under
-              their own brand.
+              Map pack, organic and AI search work for single-location businesses,
+              multi-location groups and agencies who need delivery under their own
+              brand. Run by {site.name} from {site.city}.
             </p>
           </div>
           <div>
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="legal">
-          © {year} {site.name}. No rankings are guaranteed, by me or by anyone else.
+          © {year} {site.brand}. No rankings are guaranteed, by me or by anyone else.
           Google, Google Maps and Google Business Profile are trademarks of Google LLC.
         </div>
       </div>
