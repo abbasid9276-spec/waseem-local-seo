@@ -56,7 +56,8 @@ function schema() {
   const business = {
     "@type": "ProfessionalService",
     "@id": `${site.url}/#business`,
-    name: `${site.name} — ${site.tagline}`,
+    name: site.brand,
+    alternateName: site.name,
     url: site.url,
     description:
       "Local SEO consultancy specialising in Google Business Profile performance, map pack rankings, suspension recovery and AI search citation for single and multi-location businesses.",
@@ -122,7 +123,7 @@ function schema() {
     "@type": "WebSite",
     "@id": `${site.url}/#website`,
     url: site.url,
-    name: site.name,
+    name: site.brand,
     publisher: { "@id": `${site.url}/#person` },
     inLanguage: "en",
   };
