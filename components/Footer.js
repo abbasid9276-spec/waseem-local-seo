@@ -1,4 +1,5 @@
 import { site } from "../lib/site";
+import { cityList } from "../lib/cities";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -23,17 +24,23 @@ export default function Footer() {
               <li>Citation &amp; NAP cleanup</li>
               <li>AI Overview visibility</li>
               <li>Multi-location local SEO</li>
+              <li>
+                <a href="/guest-posting-services-in-pakistan">
+                  Guest posting &amp; editorial placement
+                </a>
+              </li>
               <li>White label for agencies</li>
             </ul>
           </div>
           <div>
-            <h4>Areas served</h4>
+            <h4>Local SEO by city</h4>
             <ul>
-              <li>Pakistan — Lahore, Karachi, Islamabad</li>
-              <li>United Kingdom</li>
-              <li>United States &amp; Canada</li>
-              <li>UAE &amp; Saudi Arabia</li>
-              <li>Australia</li>
+              {cityList.map((c) => (
+                <li key={c.slug}>
+                  <a href={`/${c.slug}`}>Local SEO services in {c.city}</a>
+                </li>
+              ))}
+              <li>UK · US &amp; Canada · UAE · Australia</li>
             </ul>
           </div>
           <div>
