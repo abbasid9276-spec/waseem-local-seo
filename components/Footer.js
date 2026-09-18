@@ -11,7 +11,7 @@ export default function Footer() {
             <p style={{ fontSize: ".92rem", color: "#9aa3ae" }}>
               Map pack, organic and AI search work for single-location businesses,
               multi-location groups and agencies who need delivery under their own
-              brand. Run by {site.name} from {site.city}.
+              brand. Run by {site.name} from {site.countryName}.
             </p>
           </div>
           <div>
@@ -30,7 +30,7 @@ export default function Footer() {
           <div>
             <h4>Areas served</h4>
             <ul>
-              <li>Pakistan — Lahore, Karachi, Islamabad</li>
+              <li>Pakistan</li>
               <li>United Kingdom</li>
               <li>United States &amp; Canada</li>
               <li>UAE &amp; Saudi Arabia</li>
