@@ -3,6 +3,19 @@ import Footer from "../../components/Footer";
 import { site } from "../../lib/site";
 import { cases } from "../../lib/portfolio";
 
+// Intrinsic size of each cropped screenshot. Used so the figure reserves the
+// right space (no layout shift) and never upscales a smaller capture.
+const DIMS = {
+  "case-01": [900, 498],
+  "case-02": [900, 382],
+  "case-03": [900, 418],
+  "case-04": [900, 404],
+  "case-05": [900, 454],
+  "case-06": [900, 534],
+  "case-07": [690, 518],
+  "case-08": [900, 426],
+};
+
 export const metadata = {
   title: "Portfolio — Local SEO Results | Waseem Abbas",
   description:
@@ -103,15 +116,15 @@ export default function Portfolio() {
                 ))}
               </div>
 
-              <figure className="shot">
+              <figure className="shot" style={{ maxWidth: DIMS[c.id][0] }}>
                 <img
                   src={c.image}
                   alt={`${c.source} screenshot showing ${c.stats
                     .map((s) => `${s.label} ${s.value}`)
                     .join(", ")}`}
                   loading={i < 2 ? "eager" : "lazy"}
-                  width="1000"
-                  height="674"
+                  width={DIMS[c.id][0]}
+                  height={DIMS[c.id][1]}
                 />
               </figure>
 
