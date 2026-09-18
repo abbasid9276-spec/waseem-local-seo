@@ -6,7 +6,6 @@ export default function Header() {
       <div className="wrap">
         <a className="brand" href="/">
           {site.brand}
-          <small>Map pack &amp; AI search · {site.countryName}</small>
         </a>
         <nav className="nav" aria-label="Primary">
           <a href="/portfolio">Portfolio</a>
