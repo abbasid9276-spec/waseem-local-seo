@@ -9,11 +9,11 @@ export default function Header() {
           <small>{site.role} · {site.city}, Pakistan</small>
         </a>
         <nav className="nav" aria-label="Primary">
-          <a href="#problem">The problem</a>
-          <a href="#services">Services</a>
-          <a href="#ai-search">AI search</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#faq">FAQ</a>
+          <a href="/portfolio">Results</a>
+          <a href="/#services">Services</a>
+          <a href="/#ai-search">AI search</a>
+          <a href="/#pricing">Pricing</a>
+          <a href="/#faq">FAQ</a>
           <a className="btn btn-primary" href={`https://wa.me/${site.whatsapp}`} rel="nofollow">
             WhatsApp
           </a>
