@@ -205,6 +205,13 @@ footer h4 { color: #fff; font-size: .78rem; letter-spacing: .1em; text-transform
 footer ul { list-style: none; padding: 0; font-size: .92rem; }
 footer .legal { border-top: 1px solid #1d242d; margin-top: 32px; padding-top: 20px; font-size: .84rem; color: #7d8792; }
 
+.crumb { font-size: .86rem; color: var(--fg-muted); margin-bottom: 1rem; }
+.crumb a { color: var(--accent); text-decoration: none; }
+.crumb span { margin: 0 .4rem; opacity: .6; }
+
+.signs li a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.signs li a:hover { text-decoration: underline; }
+
 .cta-band { background: var(--accent-soft); }
 .cta-band h2 { max-width: 22ch; }
 
