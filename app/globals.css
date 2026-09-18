@@ -212,6 +212,17 @@ footer .legal { border-top: 1px solid #1d242d; margin-top: 32px; padding-top: 20
 .signs li a { color: var(--accent); text-decoration: none; font-weight: 600; }
 .signs li a:hover { text-decoration: underline; }
 
+/* portfolio screenshots */
+.shot {
+  margin: 0 0 1.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+  max-width: 900px;
+}
+.shot img { display: block; width: 100%; height: auto; }
+
 .cta-band { background: var(--accent-soft); }
 .cta-band h2 { max-width: 22ch; }
 
