@@ -1,12 +1,9 @@
 import { site } from "../lib/site";
 
 export default function sitemap() {
+  const now = new Date();
   return [
-    {
-      url: site.url,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
+    { url: site.url, lastModified: now, changeFrequency: "weekly", priority: 1 },
+    { url: `${site.url}/portfolio`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
   ];
 }
