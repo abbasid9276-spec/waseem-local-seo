@@ -557,17 +557,6 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="ph" style={{ marginTop: "20px" }}>
-              <span className="ph-tag">Fill this in before launch</span>
-              <p>
-                Only real, attributable client words. Ask permission before publishing a
-                name. Where a client will not be named, use role plus business type plus
-                city rather than inventing one. Never write a testimonial on a client&apos;s
-                behalf, and never ask a client to include keywords in their review — that
-                is banned under Google&apos;s April 2026 policy and it is visible to anyone
-                reading the profile.
-              </p>
-            </div>
           </div>
         </section>
 
