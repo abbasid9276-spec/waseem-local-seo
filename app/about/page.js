@@ -54,7 +54,7 @@ export default function About() {
             <h1>About Waseem Abbas</h1>
             <p className="lede">
               One practitioner, one discipline, five years and counting. No account
-              managers, no resold work, and no rankings guaranteed — by me or by anyone
+              managers, no resold work, and no rankings guaranteed, by me or by anyone
               else who is being honest with you.
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function About() {
               Five years and more working on local search. Nineteen distinct business
               verticals: plumbing, HVAC, roofing, pest control, dentistry, general
               construction and concrete, locksmiths, commercial cleaning, car rental, and
-              others alongside them. Businesses in more than 27 countries — predominantly
+              others alongside them. Businesses in more than 27 countries, predominantly
               the United States, Canada, the United Kingdom, Germany, the Gulf and
               Australia. Forty-seven-plus businesses worked with directly, and thirteen
               Google Business Profiles recovered from suspension.
@@ -161,7 +161,7 @@ export default function About() {
             <h2>Want to see what your own numbers look like?</h2>
             <p style={{ fontSize: "1.1rem" }}>
               Send your business name and city and I will run a geo-grid check and a
-              profile audit, then tell you what is actually wrong — including if the
+              profile audit, then tell you what is actually wrong, including if the
               answer is that you do not need to hire anyone.
             </p>
             <div className="btn-row">
