@@ -8,11 +8,11 @@ export default function Header() {
           {site.brand}
         </a>
         <nav className="nav" aria-label="Primary">
+          <a href="/">Home</a>
           <a href="/portfolio">Portfolio</a>
           <a href="/#services">Services</a>
-          <a href="/#ai-search">AI search</a>
-          <a href="/#pricing">Pricing</a>
-          <a href="/#faq">FAQ</a>
+          <a href="/blog">Blog</a>
+          <a href="/contact">Contact</a>
           <a className="btn btn-primary" href={`https://wa.me/${site.whatsapp}`} rel="nofollow">
             WhatsApp
           </a>
