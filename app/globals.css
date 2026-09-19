@@ -232,3 +232,87 @@ footer .legal { border-top: 1px solid #1d242d; margin-top: 32px; padding-top: 20
 .hero-center h1 { max-width: 24ch; margin-left: auto; margin-right: auto; }
 .hero-center .lede { max-width: 72ch; margin-left: auto; margin-right: auto; }
 .hero-center .btn-row { justify-content: center; }
+
+/* services dropdown in the primary nav.
+   The trigger is a <button>, not a link, because there is no /services
+   hub page — a page of nothing but links would be thin. Opens on hover
+   and on keyboard focus (focus-within), so it is reachable with Tab. */
+.has-drop { position: relative; }
+.drop-trigger {
+  font: inherit;
+  font-size: .92rem;
+  color: var(--fg-muted);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.has-drop:hover .drop-trigger,
+.has-drop:focus-within .drop-trigger { color: var(--fg); }
+.caret {
+  width: 0; height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  opacity: .7;
+}
+.drop {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  min-width: 232px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .12s ease;
+}
+.has-drop:hover .drop,
+.has-drop:focus-within .drop {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.drop li { margin: 0; }
+.drop a {
+  display: block;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: .92rem;
+  color: var(--fg);
+  white-space: nowrap;
+}
+.drop a:hover { background: color-mix(in srgb, var(--fg) 8%, transparent); }
+
+/* On narrow screens the hover dropdown is useless, so the list is
+   simply shown inline underneath the trigger. */
+@media (max-width: 760px) {
+  .site-head .wrap { height: auto; padding-top: 10px; padding-bottom: 10px; }
+  .has-drop { width: 100%; }
+  .drop {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    border: 0;
+    box-shadow: none;
+    padding: 4px 0 0;
+    min-width: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 14px;
+  }
+  .drop a { padding: 4px 0; font-size: .86rem; color: var(--fg-muted); }
+  .drop-trigger { display: none; }
+}
