@@ -221,13 +221,13 @@ export default function Home() {
                 </caption>
                 <tbody>
                   <tr><th>Map pack searches per month in your area</th><td>600</td></tr>
-                  <tr><th>Share of clicks going to position 1–3</th><td>roughly 70%</td></tr>
+                  <tr><th>Share of clicks going to positions 1 to 3</th><td>roughly 70%</td></tr>
                   <tr><th>Your current position</th><td>6th, outside the pack</td></tr>
                   <tr><th>Calls you currently receive</th><td>12 per month</td></tr>
-                  <tr><th>Calls at position 2</th><td>40–55 per month</td></tr>
+                  <tr><th>Calls at position 2</th><td>40 to 55 per month</td></tr>
                   <tr><th>Your close rate</th><td>30%</td></tr>
                   <tr><th>Average job value</th><td>$180</td></tr>
-                  <tr><th><strong>Monthly gap</strong></th><td><strong>roughly 9–13 jobs, $1,600–2,300</strong></td></tr>
+                  <tr><th><strong>Monthly gap</strong></th><td><strong>roughly 9 to 13 jobs, $1,600 to $2,300</strong></td></tr>
                 </tbody>
               </table>
             </div>
@@ -405,7 +405,7 @@ export default function Home() {
                 </p>
               </li>
               <li>
-                <h3>Weeks 3–4: Foundations</h3>
+                <h3>Weeks 3-4: Foundations</h3>
                 <p>
                   Schema and entity markup, citation corrections, review system set up
                   inside your own CRM or messaging, conversion tracking so that calls and
@@ -413,7 +413,7 @@ export default function Home() {
                 </p>
               </li>
               <li>
-                <h3>Weeks 5–8: Content and AI layer</h3>
+                <h3>Weeks 5-8: Content and AI layer</h3>
                 <p>
                   Location and service pages rebuilt as genuine, specific documents rather
                   than templates. Pricing and comparison content written for extraction.
@@ -421,7 +421,7 @@ export default function Home() {
                 </p>
               </li>
               <li>
-                <h3>Weeks 9–12: Compound and measure</h3>
+                <h3>Weeks 9-12: Compound and measure</h3>
                 <p>
                   Weekly profile activity, review velocity, ongoing citation work, and the
                   first meaningful geo-grid comparison against the week-one baseline. This
