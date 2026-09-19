@@ -10,11 +10,65 @@ import {
   disqualifiers,
 } from "../lib/site";
 
+export const metadata = {
+  title: "Local SEO Expert in Pakistan | Map Pack & AI Search — Waseem Abbas",
+  description:
+    "Local SEO consultant in Pakistan working with businesses and agencies in the UK, US, Gulf and Australia. Google Business Profile, map pack rankings, suspension recovery and AI Overview visibility. Published pricing, no guarantees.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    url: site.url,
+    title: "Local SEO Expert in Pakistan — Waseem Abbas",
+    description:
+      "Map pack rankings, Google Business Profile recovery and AI search visibility. Published pricing. Evidence, not guarantees.",
+    locale: "en_US",
+  },
+};
+
+// Homepage-only schema. This used to live in the root layout, which meant the
+// FAQ and the homepage WebPage node were emitted on every page on the site.
+function schema() {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${site.url}/#webpage`,
+        url: site.url,
+        name: "Local SEO Expert in Pakistan",
+        about: { "@id": `${site.url}/#person` },
+        isPartOf: { "@id": `${site.url}/#website` },
+        breadcrumb: { "@id": `${site.url}/#breadcrumb` },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${site.url}/#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: site.url },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${site.url}/#faq`,
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      },
+    ],
+  };
+}
+
 export default function Home() {
   const wa = `https://wa.me/${site.whatsapp}`;
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema()) }}
+      />
       <Header />
       <main>
 
