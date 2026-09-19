@@ -57,7 +57,7 @@ function schema() {
     founder: { "@id": `${site.url}/#person` },
     telephone: site.phone,
     email: `mailto:${site.email}`,
-    priceRange: "$270 – $750 per month",
+    priceRange: "$270 to $750 per month",
     currenciesAccepted: "USD",
     address: {
       "@type": "PostalAddress",
