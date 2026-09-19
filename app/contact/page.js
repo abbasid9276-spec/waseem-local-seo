@@ -79,14 +79,13 @@ export default function Contact() {
             <h2>How to reach me</h2>
             <ul>
               <li>
-                Email: <a href={`mailto:${site.email}`}>{site.email}</a> — the best
+                Email: <a href={`mailto:${site.email}`}>{site.email}</a>, the best
                 channel for anything involving account access, audits or proposals.
               </li>
               <li>
                 WhatsApp: <a href={`https://wa.me/${site.whatsapp}`} rel="nofollow">
                   message me
-                </a>{" "}
-                — best for quick questions and for clients already on a retainer.
+                </a>. Best for quick questions and for clients already on a retainer.
               </li>
               <li>Working timezone: {site.timezone}.</li>
             </ul>
@@ -96,7 +95,7 @@ export default function Contact() {
               Four things, and nothing more than that. Your business name exactly as it
               appears on your Google Business Profile. The city or service radius you
               actually want customers from. Your website URL if you have one. And one
-              line on what you want more of — emergency call-outs, booked appointments,
+              line on what you want more of: emergency call-outs, booked appointments,
               commercial contracts, walk-ins.
             </p>
             <p>
@@ -147,7 +146,7 @@ export default function Contact() {
             <ul>
               {overlap.map((o) => (
                 <li key={o.region}>
-                  <strong>{o.region}</strong> — {o.hours}. {o.note}.
+                  <strong>{o.region}</strong>: {o.hours}. {o.note}.
                 </li>
               ))}
             </ul>
