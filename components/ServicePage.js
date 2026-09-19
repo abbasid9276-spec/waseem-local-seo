@@ -5,8 +5,8 @@ import { services } from "../lib/services";
 
 // Shared renderer for every service page.
 //
-// Service pages live at the root — /gmb-optimization, not
-// /services/gmb-optimization — because there is no services section to
+// Service pages live at the root: /gmb-optimization, not
+// /services/gmb-optimization, because there is no services section to
 // nest them under. "Services" in the header is a dropdown trigger, not a
 // link, so no hub page exists and none should be implied by the URL.
 
@@ -148,7 +148,7 @@ export default function ServicePage({ service: s }) {
             <h2>Want to know what your own numbers look like?</h2>
             <p style={{ fontSize: "1.1rem" }}>
               Send your business name and city. I will run a geo-grid check and a profile
-              audit and tell you what is actually wrong — including if the answer is that
+              audit and tell you what is actually wrong, including if the answer is that
               you do not need to hire anyone.
             </p>
             <div className="btn-row">
