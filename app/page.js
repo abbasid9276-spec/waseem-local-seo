@@ -11,14 +11,14 @@ import {
 } from "../lib/site";
 
 export const metadata = {
-  title: "Local SEO Expert in Pakistan | Map Pack & AI Search — Waseem Abbas",
+  title: "Local SEO Expert in Pakistan | Map Pack & AI Search by Waseem Abbas",
   description:
     "Local SEO consultant in Pakistan working with businesses and agencies in the UK, US, Gulf and Australia. Google Business Profile, map pack rankings, suspension recovery and AI Overview visibility. Published pricing, no guarantees.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: site.url,
-    title: "Local SEO Expert in Pakistan — Waseem Abbas",
+    title: "Local SEO Expert in Pakistan | Waseem Abbas",
     description:
       "Map pack rankings, Google Business Profile recovery and AI search visibility. Published pricing. Evidence, not guarantees.",
     locale: "en_US",
@@ -78,7 +78,7 @@ export default function Home() {
             <span className="pill">Working with businesses in the UK, US, Gulf &amp; Australia</span>
             <h1>Local SEO Expert in Pakistan</h1>
             <p className="lede">
-              I get businesses into the Google map pack — and into the AI answers that
+              I get businesses into the Google map pack, and into the AI answers that
               now sit above it. Published pricing, evidence you can check, and no
               promise of a number one ranking, because nobody can honestly make one.
             </p>
@@ -87,7 +87,7 @@ export default function Home() {
               Most of my clients are outside Pakistan: service businesses, clinics and
               law firms in the UK, United States, Canada and the Gulf, plus agencies who
               need local SEO delivered under their own brand. The work is narrow on
-              purpose — Google Business Profile performance, map pack rankings, profile
+              purpose: Google Business Profile performance, map pack rankings, profile
               recovery, and visibility inside AI Overviews and assistants like ChatGPT,
               Gemini and Perplexity.
             </p>
@@ -173,8 +173,8 @@ export default function Home() {
               </li>
               <li>
                 <strong>You get direction requests but almost no calls.</strong>{" "}
-                A conversion problem inside the profile — hours, photos, description or
-                the wrong primary action button — not a ranking problem.
+                A conversion problem inside the profile: hours, photos, description or
+                the wrong primary action button, not a ranking problem.
               </li>
               <li>
                 <strong>Your hours are wrong during Ramadan, Eid or public holidays.</strong>{" "}
@@ -217,17 +217,17 @@ export default function Home() {
             <div className="table-scroll">
               <table>
                 <caption className="ph-tag" style={{ captionSide: "bottom", textAlign: "left", paddingTop: "10px", color: "var(--fg-muted)", letterSpacing: 0, textTransform: "none", fontWeight: 400, fontSize: ".84rem" }}>
-                  Illustrative model. Replace with your own average job value and search volume — the point is the method, not these figures.
+                  Illustrative model. Replace with your own average job value and search volume. The point is the method, not these figures.
                 </caption>
                 <tbody>
                   <tr><th>Map pack searches per month in your area</th><td>600</td></tr>
                   <tr><th>Share of clicks going to position 1–3</th><td>roughly 70%</td></tr>
-                  <tr><th>Your current position</th><td>6th — outside the pack</td></tr>
+                  <tr><th>Your current position</th><td>6th, outside the pack</td></tr>
                   <tr><th>Calls you currently receive</th><td>12 per month</td></tr>
                   <tr><th>Calls at position 2</th><td>40–55 per month</td></tr>
                   <tr><th>Your close rate</th><td>30%</td></tr>
                   <tr><th>Average job value</th><td>$180</td></tr>
-                  <tr><th><strong>Monthly gap</strong></th><td><strong>roughly 9–13 jobs — $1,600–2,300</strong></td></tr>
+                  <tr><th><strong>Monthly gap</strong></th><td><strong>roughly 9–13 jobs, $1,600–2,300</strong></td></tr>
                 </tbody>
               </table>
             </div>
@@ -277,7 +277,7 @@ export default function Home() {
                 <p>
                   Ranking measured as a grid across your actual service radius, not a
                   single position from one point. You see where you win, where you fade,
-                  and how far your listing genuinely travels — which is the honest answer
+                  and how far your listing genuinely travels, which is the honest answer
                   to &quot;are we ranking?&quot;
                 </p>
               </div>
@@ -286,7 +286,7 @@ export default function Home() {
                 <p>
                   A compliant system: neutral, open-ended requests sent to every customer
                   through your own channels. No gating, no incentives, no staff quotas, no
-                  requests naming employees — all explicitly banned under Google&apos;s April
+                  requests naming employees, all explicitly banned under Google&apos;s April
                   2026 rating-manipulation policy, and all common in this industry.
                 </p>
               </div>
@@ -312,7 +312,7 @@ export default function Home() {
                 <h3>Multi-location &amp; white label</h3>
                 <p>
                   For groups: cross-location NAP governance, duplicate control, and
-                  centralised review processes — because one non-compliant process copied
+                  centralised review processes, because one non-compliant process copied
                   across ten branches is ten violations. For agencies: delivery under your
                   brand, fixed capacity, named contact.
                 </p>
@@ -345,7 +345,7 @@ export default function Home() {
               </table>
             </div>
             <p>
-              The map pack still owns the transactional query — the one where somebody is
+              The map pack still owns the transactional query, the one where somebody is
               about to call. AI owns everything upstream of it: the research, the price
               check, the comparison. If you are only competing for the map pack, you are
               invisible for the entire stretch of the journey where the decision actually
@@ -354,7 +354,7 @@ export default function Home() {
             <h3 style={{ marginTop: "2rem" }}>How businesses get cited in AI answers</h3>
             <p>
               Only about 23% of citations in local AI Overviews point at the business&apos;s own
-              website. The rest come from third-party sources — Reddit accounts for
+              website. The rest come from third-party sources: Reddit accounts for
               roughly 21% and YouTube for close to 19%. This is the part most providers
               have not adjusted to: you cannot win AI visibility with on-site content
               alone, no matter how much of it you publish.
@@ -386,7 +386,7 @@ export default function Home() {
             <h2>The first 90 days</h2>
             <ol className="steps">
               <li>
-                <h3>Week 1 — Audit and baseline</h3>
+                <h3>Week 1: Audit and baseline</h3>
                 <p>
                   Geo-grid baseline across your service radius, full profile audit,
                   category analysis against the businesses currently beating you, citation
@@ -396,7 +396,7 @@ export default function Home() {
                 </p>
               </li>
               <li>
-                <h3>Week 2 — Fix what is broken</h3>
+                <h3>Week 2: Fix what is broken</h3>
                 <p>
                   Category corrections, hours including seasonal and holiday schedules,
                   complete profile fields, services and products, duplicate listing
@@ -405,7 +405,7 @@ export default function Home() {
                 </p>
               </li>
               <li>
-                <h3>Weeks 3–4 — Foundations</h3>
+                <h3>Weeks 3–4: Foundations</h3>
                 <p>
                   Schema and entity markup, citation corrections, review system set up
                   inside your own CRM or messaging, conversion tracking so that calls and
@@ -413,7 +413,7 @@ export default function Home() {
                 </p>
               </li>
               <li>
-                <h3>Weeks 5–8 — Content and AI layer</h3>
+                <h3>Weeks 5–8: Content and AI layer</h3>
                 <p>
                   Location and service pages rebuilt as genuine, specific documents rather
                   than templates. Pricing and comparison content written for extraction.
@@ -421,7 +421,7 @@ export default function Home() {
                 </p>
               </li>
               <li>
-                <h3>Weeks 9–12 — Compound and measure</h3>
+                <h3>Weeks 9–12: Compound and measure</h3>
                 <p>
                   Weekly profile activity, review velocity, ongoing citation work, and the
                   first meaningful geo-grid comparison against the week-one baseline. This
@@ -472,7 +472,7 @@ export default function Home() {
               A plumbing business in the United States is routinely quoted $3,500 a month
               for local SEO. A large part of that figure is agency overhead: account
               managers, sales commission, office costs and a delivery team that is often
-              offshore anyway. Working with me removes those layers — you deal directly
+              offshore anyway. Working with me removes those layers. You deal directly
               with the person doing the work.
             </p>
             <p>
@@ -549,7 +549,7 @@ export default function Home() {
                   Your Google Business Profile stays under your Google account with me
                   added as a manager, never an owner. Website, domain, hosting, Analytics
                   and Search Console stay in your accounts. Content produced is yours.
-                  Offboarding is a manager removal and a handover document — leaving never
+                  Offboarding is a manager removal and a handover document. Leaving never
                   costs you your listing.
                 </p>
               </div>
@@ -607,7 +607,7 @@ export default function Home() {
               {testimonials.map((t, i) => (
                 <div className="card" key={i}>
                   <p style={{ fontSize: "1.02rem", color: "var(--fg)" }}>&ldquo;{t.quote}&rdquo;</p>
-                  <p style={{ marginTop: ".8rem" }}><strong>{t.author}</strong> — {t.detail}</p>
+                  <p style={{ marginTop: ".8rem" }}><strong>{t.author}</strong>, {t.detail}</p>
                 </div>
               ))}
             </div>
@@ -635,7 +635,7 @@ export default function Home() {
             <p>
               Five years and more in local search, across 19 business verticals and 27+
               countries. Plumbing, HVAC, roofing, pest control, dentistry, construction,
-              locksmiths, cleaning, car rental — categories where the phone ringing is
+              locksmiths, cleaning, car rental: categories where the phone ringing is
               the entire business model, and where a suspended profile means revenue
               stops the same afternoon.
             </p>
@@ -646,7 +646,7 @@ export default function Home() {
               to have been wrong a few times and corrected it.
             </p>
             <p>
-              My own profile is verified and public, and so is the work I publish — if
+              My own profile is verified and public, and so is the work I publish. If
               someone offers to manage your local presence without either, that is the
               first question to ask them.
             </p>
@@ -693,7 +693,7 @@ export default function Home() {
             <h2>Start with the audit, not the contract</h2>
             <p style={{ fontSize: "1.1rem" }}>
               Send me your business name and city. I will run a geo-grid check and a
-              profile audit and tell you what is actually wrong — including if the answer
+              profile audit and tell you what is actually wrong, including if the answer
               is that you do not need to hire anyone. If the monthly gap does not justify
               a retainer, I will say so.
             </p>
