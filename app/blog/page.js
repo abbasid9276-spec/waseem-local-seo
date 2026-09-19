@@ -6,7 +6,7 @@ import { posts } from "../../lib/blog";
 export const metadata = {
   title: "Blog | WaseemRanker",
   description:
-    "Working notes on Google Business Profile suspensions, geo-grid ranking, map pack visibility and AI search — written from client accounts, not from other people's blog posts.",
+    "Working notes on Google Business Profile suspensions, geo-grid ranking, map pack visibility and AI search, written from client accounts, not from other people's blog posts.",
   alternates: { canonical: "/blog" },
   openGraph: {
     type: "website",
@@ -64,7 +64,7 @@ export default function Blog() {
             <h1>Notes from the work</h1>
             <p className="lede">
               Short, practical pieces on Google Business Profile suspensions, geo-grid
-              ranking, map pack visibility and AI search — written from client accounts
+              ranking, map pack visibility and AI search, written from client accounts
               rather than rewritten from someone else&rsquo;s blog.
             </p>
           </div>
