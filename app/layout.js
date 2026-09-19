@@ -3,7 +3,7 @@ import { site } from "../lib/site";
 
 export const metadata = {
   metadataBase: new URL(site.url),
-  title: "Local SEO Expert in Pakistan | Map Pack & AI Search — Waseem Abbas",
+  title: "Local SEO Expert in Pakistan | Map Pack & AI Search by Waseem Abbas",
   description:
     "Local SEO consultant in Pakistan working with businesses and agencies in the UK, US, Gulf and Australia. Google Business Profile, map pack rankings, suspension recovery and AI Overview visibility. Published pricing, no guarantees.",
   // No canonical or openGraph here on purpose. Anything set in the root layout
