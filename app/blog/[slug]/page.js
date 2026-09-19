@@ -95,6 +95,12 @@ export default async function Post({ params }) {
                 {s.p.map((t, i) => (
                   <p key={i}>{t}</p>
                 ))}
+                {(s.items || []).map((it) => (
+                  <div key={it.n}>
+                    <h3>{it.n}</h3>
+                    <p>{it.p}</p>
+                  </div>
+                ))}
               </div>
             ))}
             <p style={{ marginTop: "2rem" }}>
