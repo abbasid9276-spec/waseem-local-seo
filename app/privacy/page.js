@@ -74,7 +74,7 @@ export default function Privacy() {
               This site does not have a contact form, a newsletter signup, a login area or
               an e-commerce checkout. It sets no advertising cookies and runs no
               cross-site tracking pixels. The buttons on the site open your own email
-              client, your own WhatsApp, or an external profile — nothing is captured on
+              client, your own WhatsApp, or an external profile. Nothing is captured on
               this domain when you click one.
             </p>
             <p>
@@ -90,7 +90,7 @@ export default function Privacy() {
             <p>
               If you email or message me, I receive whatever you choose to send: usually
               your name, email address, business name, website and a description of what
-              you want. I use that information for one purpose only — to respond to your
+              you want. I use that information for one purpose only: to respond to your
               enquiry, run the free audit you asked for, and if we go on to work together,
               to deliver and invoice for that work.
             </p>
