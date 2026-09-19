@@ -28,13 +28,12 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4>Areas served</h4>
+            <h4>Company</h4>
             <ul>
-              <li>Pakistan</li>
-              <li>United Kingdom</li>
-              <li>United States &amp; Canada</li>
-              <li>UAE &amp; Saudi Arabia</li>
-              <li>Australia</li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/contact">Contact</a></li>
+              <li><a href="/privacy">Privacy Policy</a></li>
             </ul>
           </div>
           <div>
