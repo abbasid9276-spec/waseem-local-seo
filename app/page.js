@@ -48,20 +48,11 @@ export default function Home() {
         <section className="alt">
           <div className="wrap">
             <p className="eyebrow">By the numbers</p>
-            <div className="grid g4" style={{ marginBottom: "22px" }}>
-              <div className="stat"><b>—</b><span>Businesses worked with</span></div>
-              <div className="stat"><b>—</b><span>Profiles recovered from suspension</span></div>
-              <div className="stat"><b>—</b><span>Years doing local SEO</span></div>
-              <div className="stat"><b>—</b><span>Countries served</span></div>
-            </div>
-            <div className="ph">
-              <span className="ph-tag">Fill this in before launch</span>
-              <p>
-                Replace each dash with a real figure you can evidence. Do not publish a
-                number you cannot back up with a screenshot or a client who will confirm
-                it — an unverifiable stat is worth less than an empty slot, and the
-                whole positioning of this site is that you are the one who shows proof.
-              </p>
+            <div className="grid g4" style={{ marginBottom: "0" }}>
+              <div className="stat"><b>47+</b><span>Businesses worked with</span></div>
+              <div className="stat"><b>13</b><span>Profiles recovered from suspension</span></div>
+              <div className="stat"><b>5+</b><span>Years doing local SEO</span></div>
+              <div className="stat"><b>27</b><span>Countries served</span></div>
             </div>
           </div>
         </section>
@@ -181,8 +172,8 @@ export default function Home() {
                   <tr><th>Calls you currently receive</th><td>12 per month</td></tr>
                   <tr><th>Calls at position 2</th><td>40–55 per month</td></tr>
                   <tr><th>Your close rate</th><td>30%</td></tr>
-                  <tr><th>Average job value</th><td>PKR 15,000 / $180</td></tr>
-                  <tr><th><strong>Monthly gap</strong></th><td><strong>roughly 9–13 jobs — PKR 135,000–195,000</strong></td></tr>
+                  <tr><th>Average job value</th><td>$180</td></tr>
+                  <tr><th><strong>Monthly gap</strong></th><td><strong>roughly 9–13 jobs — $1,600–2,300</strong></td></tr>
                 </tbody>
               </table>
             </div>
@@ -401,19 +392,18 @@ export default function Home() {
             <p className="eyebrow">Pricing</p>
             <h2>What it costs, published</h2>
             <p>
-              Local SEO in Pakistan typically runs between PKR 30,000 and PKR 150,000 per
-              month. Most single-location engagements sit between PKR 75,000 and PKR
-              120,000. I publish these because the most common question in this market is
-              cost, and because a provider who will not name a range before a sales call
-              is usually pricing you rather than the work.
+              Three plans, in US dollars, billed monthly. Most single-location
+              businesses start at $390. I publish these because the most common question
+              I get is cost, and because a provider who will not name a price before a
+              sales call is usually pricing you rather than the work.
             </p>
-            <div className="grid g4">
+            <div className="grid g3">
               {pricing.map((p) => (
                 <div className="card price-card" key={p.tier}>
                   <h3>{p.tier}</h3>
                   <div className="amt">
-                    {p.pkr}
-                    <small>{p.usd} · {p.cadence}</small>
+                    {p.usd}
+                    <small>{p.cadence}</small>
                   </div>
                   <ul>
                     {p.includes.map((i) => <li key={i}>{i}</li>)}
