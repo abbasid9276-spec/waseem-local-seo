@@ -1,20 +1,15 @@
 import "./globals.css";
-import { site, faqs } from "../lib/site";
+import { site } from "../lib/site";
 
 export const metadata = {
   metadataBase: new URL(site.url),
   title: "Local SEO Expert in Pakistan | Map Pack & AI Search — Waseem Abbas",
   description:
     "Local SEO consultant in Pakistan working with businesses and agencies in the UK, US, Gulf and Australia. Google Business Profile, map pack rankings, suspension recovery and AI Overview visibility. Published pricing, no guarantees.",
-  alternates: { canonical: "/" },
-  openGraph: {
-    type: "website",
-    url: site.url,
-    title: "Local SEO Expert in Pakistan — Waseem Abbas",
-    description:
-      "Map pack rankings, Google Business Profile recovery and AI search visibility. Published pricing. Evidence, not guarantees.",
-    locale: "en_US",
-  },
+  // No canonical or openGraph here on purpose. Anything set in the root layout
+  // is inherited by every page that does not override it, which is how the
+  // homepage title and the homepage FAQ ended up on /privacy and /blog.
+  // Each page sets its own canonical and Open Graph block.
   robots: { index: true, follow: true },
 };
 
@@ -95,26 +90,6 @@ function schema() {
     sameAs: site.profiles,
   };
 
-  const faqPage = {
-    "@type": "FAQPage",
-    "@id": `${site.url}/#faq`,
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
-
-  const webpage = {
-    "@type": "WebPage",
-    "@id": `${site.url}/#webpage`,
-    url: site.url,
-    name: "Local SEO Expert in Pakistan",
-    about: { "@id": `${site.url}/#person` },
-    isPartOf: { "@id": `${site.url}/#website` },
-    breadcrumb: { "@id": `${site.url}/#breadcrumb` },
-  };
-
   const website = {
     "@type": "WebSite",
     "@id": `${site.url}/#website`,
@@ -124,17 +99,9 @@ function schema() {
     inLanguage: "en",
   };
 
-  const breadcrumb = {
-    "@type": "BreadcrumbList",
-    "@id": `${site.url}/#breadcrumb`,
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: site.url },
-    ],
-  };
-
   return {
     "@context": "https://schema.org",
-    "@graph": [person, business, webpage, website, breadcrumb, faqPage],
+    "@graph": [person, business, website],
   };
 }
 
@@ -151,4 +118,3 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
-
