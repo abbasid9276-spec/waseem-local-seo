@@ -436,22 +436,23 @@ export default function Home() {
             <p className="eyebrow">Evidence</p>
             <h2>Results, with the screenshots to match</h2>
             <p>
-              Every engagement below can be evidenced on request with dated geo-grid
-              exports and Google Business Profile Insights screenshots. If a provider
-              cannot produce those, treat their case studies as marketing copy.
+              Three engagements, three different trades. Every figure below is read off
+              a dated screenshot from the client&apos;s own Search Console or Business Profile
+              account, and I can produce the export on request. If a provider cannot do
+              that, treat their case studies as marketing copy.
             </p>
             <div className="grid g3">
               {caseStudies.map((c, i) => (
                 <div className="card" key={i}>
                   <h3>{c.vertical}</h3>
-                  <p style={{ marginBottom: ".8rem" }}><strong>{c.location}</strong> · {c.window}</p>
+                  <p style={{ marginBottom: ".8rem" }}><strong>{c.location}</strong> · {c.window} · {c.source}</p>
                   <p style={{ marginBottom: ".8rem" }}>{c.problem}</p>
                   <div className="table-scroll" style={{ margin: ".6rem 0" }}>
                     <table style={{ minWidth: "auto", fontSize: ".85rem" }}>
-                      <thead><tr><th>Metric</th><th>Before</th><th>After</th></tr></thead>
+                      <thead><tr><th>Metric</th><th>Result</th></tr></thead>
                       <tbody>
                         {c.metrics.map((m) => (
-                          <tr key={m.label}><td>{m.label}</td><td>{m.before}</td><td>{m.after}</td></tr>
+                          <tr key={m.label}><td>{m.label}</td><td><strong>{m.value}</strong></td></tr>
                         ))}
                       </tbody>
                     </table>
@@ -460,17 +461,9 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="ph" style={{ marginTop: "20px" }}>
-              <span className="ph-tag">Fill this in before launch</span>
-              <p>
-                Replace all three with real engagements in <code>lib/site.js</code>. Each one
-                needs the vertical, the city, the timeframe, what was broken, what you did,
-                and before/after numbers you hold a dated screenshot for. Nothing here ships
-                invented — fabricated results are the single fastest way to lose the trust
-                this entire page is built on, and every competitor on this search result
-                already has zero case studies, so three real ones is enough to win.
-              </p>
-            </div>
+            <p style={{ marginTop: "1.4rem" }}>
+              <a href="/portfolio">See all eight engagements, with the screenshots</a>
+            </p>
           </div>
         </section>
 
