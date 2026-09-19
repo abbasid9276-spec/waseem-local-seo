@@ -235,7 +235,7 @@ footer .legal { border-top: 1px solid #1d242d; margin-top: 32px; padding-top: 20
 
 /* services dropdown in the primary nav.
    The trigger is a <button>, not a link, because there is no /services
-   hub page — a page of nothing but links would be thin. Opens on hover
+   hub page: a page of nothing but links would be thin. Opens on hover
    and on keyboard focus (focus-within), so it is reachable with Tab. */
 .has-drop { position: relative; }
 .drop-trigger {
