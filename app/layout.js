@@ -62,8 +62,8 @@ function schema() {
     founder: { "@id": `${site.url}/#person` },
     telephone: site.phone,
     email: `mailto:${site.email}`,
-    priceRange: "PKR 40,000 – PKR 150,000+",
-    currenciesAccepted: "PKR, USD, GBP",
+    priceRange: "$270 – $750 per month",
+    currenciesAccepted: "USD",
     address: {
       "@type": "PostalAddress",
       addressCountry: site.country,
