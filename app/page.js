@@ -75,7 +75,7 @@ export default function Home() {
         {/* 1 ── HERO ─────────────────────────────────────────── */}
         <section className="hero">
           <div className="wrap">
-            <span className="pill">Working with businesses in the UK, US, Gulf &amp; Australia</span>
+            <span className="pill">47+ businesses · 13 profiles recovered from suspension · 27 countries</span>
             <h1>Local SEO Expert in Pakistan</h1>
             <p className="lede">
               I get businesses into the Google map pack, and into the AI answers that
