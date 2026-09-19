@@ -26,7 +26,7 @@ export const metadata = {
     url: `${site.url}/portfolio`,
     title: "Client Results & Case Studies | WaseemRanker",
     description:
-      "Dated screenshots from client accounts. Clicks, impressions, direction requests and engagement — and what each one meant for the business.",
+      "Dated screenshots from client accounts. Clicks, impressions, direction requests and engagement, and what each one meant for the business.",
   },
 };
 
@@ -81,7 +81,7 @@ export default function Portfolio() {
           <div className="wrap">
             <h1>Results, with the screenshots to match</h1>
             <p className="lede">
-              Every figure on this page is read straight from a client account —
+              Every figure on this page is read straight from a client account:
               Google Search Console, Google Business Profile, Bing Webmaster Tools and
               GA4. No rounded-up claims, no numbers I cannot produce the export for.
             </p>
@@ -166,7 +166,7 @@ export default function Portfolio() {
             <h2>Want to know what your own numbers look like?</h2>
             <p style={{ fontSize: "1.1rem" }}>
               Send me your business name and city. I will run a geo-grid check and a
-              profile audit and tell you what is actually wrong — including if the
+              profile audit and tell you what is actually wrong, including if the
               answer is that you do not need to hire anyone. If the monthly gap does not
               justify a retainer, I will say so.
             </p>
