@@ -13,7 +13,7 @@ export default function Header() {
           <a href="/portfolio">Portfolio</a>
 
           {/* Services is a dropdown trigger, not a link. There is no /services
-              hub page and no /services/ URL prefix on purpose — a page
+              hub page and no /services/ URL prefix on purpose: a page
               containing nothing but five links would be thin, and the
               individual service pages are the ones meant to rank. */}
           <div className="has-drop">
