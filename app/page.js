@@ -578,17 +578,41 @@ export default function Home() {
               relaying questions to a delivery team you never meet, which is most of what
               you are paying for at a large agency and most of where the meaning gets lost.
             </p>
-            <div className="ph">
-              <span className="ph-tag">Fill this in before launch</span>
-              <p>
-                Add: years working in local SEO, a real photo of yourself, the verticals
-                you have the most experience in, any certifications, and — most valuable
-                for credibility here — the local assets you own and rank yourself. A
-                consultant who ranks their own properties can say something no competitor
-                on this search result can. Also add your own verified Google Business
-                Profile link; a local SEO expert without one is the easiest credibility
-                attack there is.
-              </p>
+            <p>
+              Five years and more in local search, across 19 business verticals and 27+
+              countries. Plumbing, HVAC, roofing, pest control, dentistry, construction,
+              locksmiths, cleaning, car rental — categories where the phone ringing is
+              the entire business model, and where a suspended profile means revenue
+              stops the same afternoon.
+            </p>
+            <p>
+              Breadth matters here more than it sounds. A category Google treats as
+              high-risk behaves nothing like a clinic or a contractor, and the only way
+              to know which levers move which category is to have worked enough of them
+              to have been wrong a few times and corrected it.
+            </p>
+            <p>
+              My own profile is verified and public, and so is the work I publish — if
+              someone offers to manage your local presence without either, that is the
+              first question to ask them.
+            </p>
+            <div className="btn-row">
+              <a
+                className="btn btn-ghost"
+                href="https://share.google/OmLjd0rubKADBailS"
+                target="_blank"
+                rel="noopener"
+              >
+                My verified Google Business Profile
+              </a>
+              <a
+                className="btn btn-ghost"
+                href="https://www.youtube.com/@WaseemAbbasseo"
+                target="_blank"
+                rel="noopener"
+              >
+                YouTube channel
+              </a>
             </div>
           </div>
         </section>
