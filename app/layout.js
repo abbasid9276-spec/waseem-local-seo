@@ -10,6 +10,11 @@ export const metadata = {
   // is inherited by every page that does not override it, which is how the
   // homepage title and the homepage FAQ ended up on /privacy and /blog.
   // Each page sets its own canonical and Open Graph block.
+  icons: {
+    icon: [{ url: "/img/favicon/image.png", type: "image/png" }],
+    shortcut: "/img/favicon/image.png",
+    apple: "/img/favicon/image.png",
+  },
   robots: { index: true, follow: true },
 };
 
