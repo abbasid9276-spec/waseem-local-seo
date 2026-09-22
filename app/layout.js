@@ -3,9 +3,9 @@ import { site } from "../lib/site";
 
 export const metadata = {
   metadataBase: new URL(site.url),
-  title: "Local SEO Expert in Pakistan | Map Pack & AI Search by Waseem Abbas",
+  title: "Local SEO Expert in Pakistan | Let's Grow Your Business",
   description:
-    "Local SEO consultant in Pakistan working with businesses and agencies in the UK, US, Gulf and Australia. Google Business Profile, map pack rankings, suspension recovery and AI Overview visibility. Published pricing, no guarantees.",
+    "Local SEO expert in Pakistan helping businesses rank higher on Google Maps and search. Let's boost your visibility and bring in more customers.",
   // No canonical or openGraph here on purpose. Anything set in the root layout
   // is inherited by every page that does not override it, which is how the
   // homepage title and the homepage FAQ ended up on /privacy and /blog.
