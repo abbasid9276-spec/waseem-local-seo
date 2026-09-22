@@ -3,7 +3,7 @@ import Footer from "../../components/Footer";
 import { site } from "../../lib/site";
 
 export const metadata = {
-  title: "Privacy Policy | WaseemRanker",
+  title: "Privacy Policy | Waseem Ranker",
   description:
     "What data this site and this consultancy collect, why, how long it is kept, who it is shared with, and how to have it deleted.",
   alternates: { canonical: "/privacy" },
