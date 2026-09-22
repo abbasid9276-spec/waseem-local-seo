@@ -192,10 +192,12 @@ export default function Home() {
                 nobody can honestly make one.
               </p>
               <div className="btn-row">
-                <a className="btn btn-primary" href={gmail} target="_blank" rel="noopener nofollow">
-                  Email Me for a Free Profile Audit
+                <a className="btn btn-primary" href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener nofollow">
+                  WhatsApp Me
                 </a>
-                <a className="btn btn-white" href="/portfolio">See the proof</a>
+                <a className="btn btn-white" href={gmail} target="_blank" rel="noopener nofollow">
+                  Email Now
+                </a>
               </div>
             </div>
             <figure className="hero-figure">
