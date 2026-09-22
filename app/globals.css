@@ -406,3 +406,38 @@ footer p { color: #a9c4bc; }
   display: block; color: var(--brand-700); font-size: 1.06rem;
   font-weight: 700; margin-bottom: .35rem;
 }
+
+/* WhatsApp channel invitation */
+.wa-invite-backdrop {
+  position: fixed; inset: 0; z-index: 90;
+  background: rgba(5, 42, 35, .55); backdrop-filter: blur(3px);
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+  animation: wa-fade .22s ease;
+}
+@keyframes wa-fade { from { opacity: 0; } to { opacity: 1; } }
+.wa-invite {
+  position: relative; background: #fff; border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg); max-width: 430px; width: 100%;
+  padding: 34px 30px 30px; text-align: center;
+  animation: wa-rise .26s cubic-bezier(.2, .8, .3, 1);
+}
+@keyframes wa-rise { from { transform: translateY(14px); opacity: 0; } to { transform: none; opacity: 1; } }
+.wa-invite h3 { font-size: 1.4rem; margin-bottom: .6rem; }
+.wa-invite p { margin: 0 auto 1.5rem; font-size: .96rem; max-width: 34ch; }
+.wa-invite-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 60px; height: 60px; border-radius: 50%;
+  background: var(--brand-100); color: var(--brand-700); margin-bottom: 18px;
+}
+.wa-invite-actions { display: flex; flex-direction: column; gap: 10px; align-items: center; }
+.wa-invite-actions .btn { width: 100%; }
+.wa-invite-later {
+  background: none; border: 0; cursor: pointer; font-family: inherit;
+  font-size: .9rem; color: var(--fg-muted); padding: 6px;
+}
+.wa-invite-later:hover { color: var(--fg); text-decoration: underline; }
+.wa-invite-close {
+  position: absolute; top: 10px; right: 14px; background: none; border: 0;
+  cursor: pointer; font-size: 1.6rem; line-height: 1; color: #9fb1ab; padding: 4px 8px;
+}
+.wa-invite-close:hover { color: var(--fg); }
