@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import WhatsAppInvite from "../components/WhatsAppInvite";
 import {
   site,
   caseStudies,
@@ -577,6 +578,7 @@ export default function Home() {
       </main>
 
       <Footer />
+      <WhatsAppInvite />
     </>
   );
 }
