@@ -98,6 +98,19 @@ export default function ServicePage({ service: s }) {
             <p className="eyebrow">Services</p>
             <h1>{s.h1}</h1>
             <p className="lede">{s.excerpt}</p>
+            <div className="btn-row">
+              <a
+                className="btn btn-primary"
+                href={`https://wa.me/${site.whatsapp}`}
+                target="_blank"
+                rel="noopener nofollow"
+              >
+                WhatsApp Now
+              </a>
+              <a className="btn btn-white" href="/contact">
+                Other ways to reach me
+              </a>
+            </div>
           </div>
         </section>
 
