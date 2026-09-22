@@ -119,6 +119,23 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema()) }}
         />
         {children}
+
+        {/* Sitewide WhatsApp button. A blog post that carries its own
+            offer renders .floatcta-post, which hides this one in CSS. */}
+        <a
+          className="floatcta floatcta-default"
+          href={`https://wa.me/${site.whatsapp}`}
+          target="_blank"
+          rel="noopener nofollow"
+          aria-label="Chat on WhatsApp"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.6 6.6 0 01-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5c.1-.2.1-.3 0-.5l-.7-1.6c-.2-.4-.4-.4-.5-.4h-.5a1 1 0 00-.7.3c-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.8 1.9.7 2.3.6 2.7.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2z" />
+          </svg>
+          <span>
+            <b>Chat on WhatsApp</b>
+          </span>
+        </a>
       </body>
     </html>
   );
