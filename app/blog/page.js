@@ -4,14 +4,14 @@ import { site } from "../../lib/site";
 import { posts } from "../../lib/blog";
 
 export const metadata = {
-  title: "Blog | WaseemRanker",
+  title: "Blog | Waseem Ranker",
   description:
     "Working notes on Google Business Profile suspensions, geo-grid ranking, map pack visibility and AI search, written from client accounts, not from other people's blog posts.",
   alternates: { canonical: "/blog" },
   openGraph: {
     type: "website",
     url: `${site.url}/blog`,
-    title: "Blog | WaseemRanker",
+    title: "Blog | Waseem Ranker",
     description:
       "Practical notes on local search, written from real engagements.",
   },
@@ -26,7 +26,7 @@ function schema() {
         "@type": "Blog",
         "@id": `${url}#blog`,
         url,
-        name: "WaseemRanker Blog",
+        name: "Waseem Ranker Blog",
         author: { "@id": `${site.url}/#person` },
         blogPost: posts.map((p) => ({
           "@type": "BlogPosting",
