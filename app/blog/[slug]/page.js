@@ -150,7 +150,7 @@ export default async function Post({ params }) {
 
       {post.float && (
         <a
-          className="floatcta"
+          className="floatcta floatcta-post"
           href={`https://wa.me/${site.whatsapp}`}
           target="_blank"
           rel="noopener nofollow"
