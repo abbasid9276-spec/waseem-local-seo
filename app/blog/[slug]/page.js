@@ -82,13 +82,24 @@ export default async function Post({ params }) {
               })}{" "}
               · {post.minutes} min read
             </p>
-            <h1>{post.title}</h1>
-            <p className="lede">{post.excerpt}</p>
+            <h1>{post.h1 || post.title}</h1>
+            {(post.heroP || [post.excerpt]).map((t, i) => (
+              <p className={i === 0 ? "lede" : undefined} key={i}>
+                {t}
+              </p>
+            ))}
           </div>
         </section>
 
         <section>
           <div className="wrap" style={{ maxWidth: "820px" }}>
+            {post.list && (
+              <ol className="urllist">
+                {post.list.map((u) => (
+                  <li key={u}>{u}</li>
+                ))}
+              </ol>
+            )}
             {post.body.map((s) => (
               <div key={s.h}>
                 <h2>{s.h}</h2>
@@ -112,13 +123,25 @@ export default async function Post({ params }) {
 
         <section className="cta-band">
           <div className="wrap">
-            <h2>Want this checked on your own account?</h2>
+            <h2>{post.cta ? post.cta : "Want this checked on your own account?"}</h2>
             <p style={{ fontSize: "1.1rem" }}>
-              Send your business name and city and I will run a geo-grid check and a
-              profile audit, then tell you what is actually wrong.
+              {post.cta
+                ? "Tell me your niche and your market and I will tell you which of these are worth registering for you, in what order, and which to leave alone."
+                : "Send your business name and city and I will run a geo-grid check and a profile audit, then tell you what is actually wrong."}
             </p>
             <div className="btn-row">
-              <a className="btn btn-primary" href="/contact">Get in touch</a>
+              {post.cta ? (
+                <a
+                  className="btn btn-primary"
+                  href={`https://wa.me/${site.whatsapp}`}
+                  target="_blank"
+                  rel="noopener nofollow"
+                >
+                  WhatsApp Now
+                </a>
+              ) : (
+                <a className="btn btn-primary" href="/contact">Get in touch</a>
+              )}
               <a className="btn btn-ghost" href="/blog">Read the other posts</a>
             </div>
           </div>
