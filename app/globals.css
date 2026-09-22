@@ -459,3 +459,28 @@ footer p { color: #a9c4bc; }
   display: inline-block; min-width: 2.6em; color: var(--fg-muted);
   font-size: .85rem; font-variant-numeric: tabular-nums;
 }
+
+/* LinkedIn button in the primary nav */
+.btn-linkedin {
+  background: #0077B5; color: #fff;
+  box-shadow: 0 8px 22px rgba(0, 119, 181, .28);
+}
+.btn-linkedin:hover { background: #00669c; color: #fff; }
+@media (max-width: 860px) { .nav > a.btn-linkedin { font-size: .74rem; padding: 10px 16px; } }
+
+/* Floating service CTA on link-list posts */
+.floatcta {
+  position: fixed; right: 20px; bottom: 20px; z-index: 60;
+  display: flex; align-items: center; gap: 12px; max-width: 290px;
+  padding: 14px 18px; border-radius: var(--radius);
+  background: #25D366; color: #08331d; text-decoration: none;
+  box-shadow: 0 16px 40px rgba(5, 42, 35, .30);
+  font-size: .92rem; line-height: 1.35; font-weight: 600;
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+.floatcta:hover { transform: translateY(-2px); box-shadow: 0 22px 54px rgba(5, 42, 35, .38); color: #08331d; }
+.floatcta svg { width: 28px; height: 28px; flex: 0 0 28px; }
+.floatcta b { display: block; font-weight: 700; }
+@media (max-width: 560px) {
+  .floatcta { right: 12px; bottom: 12px; left: 12px; max-width: none; justify-content: center; }
+}
