@@ -4,16 +4,16 @@ import { site } from "../../lib/site";
 import { posts } from "../../lib/blog";
 
 export const metadata = {
-  title: "Blog | Waseem Ranker",
+  title: "Local SEO Blog | Citations, Map Pack and AI Search",
   description:
-    "Working notes on Google Business Profile suspensions, geo-grid ranking, map pack visibility and AI search, written from client accounts, not from other people's blog posts.",
+    "Practical local SEO notes: citation lists by country, Google Business Profile changes, map pack tactics and what is working in AI search now.",
   alternates: { canonical: "/blog" },
   openGraph: {
     type: "website",
     url: `${site.url}/blog`,
-    title: "Blog | Waseem Ranker",
+    title: "Local SEO Blog | Citations, Map Pack and AI Search",
     description:
-      "Practical notes on local search, written from real engagements.",
+      "Practical local SEO notes: citation lists by country, Google Business Profile changes, map pack tactics and what is working in AI search now.",
   },
 };
 
