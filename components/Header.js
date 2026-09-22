@@ -33,11 +33,12 @@ export default function Header() {
           <a href="/blog">Blog</a>
           <a href="/contact">Contact</a>
           <a
-            className="btn btn-primary"
-            href={`https://wa.me/${site.whatsapp}`}
-            rel="nofollow"
+            className="btn btn-linkedin"
+            href="https://www.linkedin.com/in/waseem-abbas-a5717942a/"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
           >
-            WhatsApp
+            Follow me on LinkedIn
           </a>
         </nav>
       </div>
