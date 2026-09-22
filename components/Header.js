@@ -11,10 +11,8 @@ export default function Header() {
             src="/img/logo/image.png"
             width="512"
             height="512"
-            alt=""
-            aria-hidden="true"
+            alt={site.brand}
           />
-          {site.brand}
         </a>
         <nav className="nav" aria-label="Primary">
           <a href="/">Home</a>
