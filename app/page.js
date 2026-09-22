@@ -11,14 +11,14 @@ import {
 import { services } from "../lib/services";
 
 export const metadata = {
-  title: "Local SEO Expert in Pakistan | Map Pack & AI Search by Waseem Abbas",
+  title: "Local SEO Expert in Pakistan | Map Pack & AI Search by Waseem Ranker",
   description:
     "Local SEO consultant in Pakistan working with businesses and agencies in the UK, US, Gulf and Australia. Google Business Profile, map pack rankings, suspension recovery and AI Overview visibility. Published pricing, no guarantees.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: site.url,
-    title: "Local SEO Expert in Pakistan | Waseem Abbas",
+    title: "Local SEO Expert in Pakistan | Waseem Ranker",
     description:
       "Map pack rankings, Google Business Profile recovery and AI search visibility. Published pricing. Evidence, not guarantees.",
     locale: "en_US",
@@ -155,7 +155,7 @@ export default function Home() {
     "https://mail.google.com/mail/?view=cm&fs=1&to=" +
     encodeURIComponent(site.email) +
     "&su=" +
-    encodeURIComponent("Free GMB Audit") +
+    encodeURIComponent("Free Google Business Profile Audit") +
     "&body=" +
     encodeURIComponent("Business name:\nCity:\nWebsite:\nWhat you want more of:\n");
 
@@ -185,13 +185,14 @@ export default function Home() {
               <p className="eyebrow">Local SEO</p>
               <h1>Local SEO Expert in Pakistan</h1>
               <p className="lede">
-                I get businesses into the Google map pack, and into the AI answers that now
-                sit above it. Published pricing, evidence you can check, and no promise of a
-                number one ranking, because nobody can honestly make one.
+                I am a Pakistani local SEO expert who gets businesses into the Google map
+                pack, and into the AI answers that now sit above it. Published pricing,
+                evidence you can check, and no promise of a number one ranking, because
+                nobody can honestly make one.
               </p>
               <div className="btn-row">
                 <a className="btn btn-primary" href={gmail} target="_blank" rel="noopener nofollow">
-                  Email Me for Free GMB Audit
+                  Email Me for a Free Profile Audit
                 </a>
                 <a className="btn btn-white" href="/portfolio">See the proof</a>
               </div>
@@ -226,6 +227,10 @@ export default function Home() {
             <div style={{ textAlign: "center", marginBottom: "2.6rem" }}>
               <p className="eyebrow">What you are buying</p>
               <h2>Three things most providers cannot show you</h2>
+              <p style={{ maxWidth: "62ch", margin: "0 auto" }}>
+                Anyone can call themselves a Local SEO Expert in Pakistan. These are the
+                three things I can put in front of you before you pay anything.
+              </p>
             </div>
             <div className="grid g3">
               <div className="card card-center">
@@ -302,7 +307,9 @@ export default function Home() {
               </figure>
             </div>
             <p className="note" style={{ textAlign: "center", marginTop: "1.6rem" }}>
-              Client names are withheld. I can screen share the live account for any figure here.
+              Client names are withheld. I can screen share the live account for any figure
+              here, which is the test worth applying to any Local SEO Expert in Pakistan you
+              are considering.
             </p>
           </div>
         </section>
@@ -313,12 +320,18 @@ export default function Home() {
             <div className="split">
               <div>
                 <p className="eyebrow">Differentiation</p>
-                <h2>The focus is on leads, not rankings</h2>
+                <h2>What a Local SEO Expert in Pakistan actually changes</h2>
                 <div className="rule" />
                 <p>
                   Rankings are a means. What a business owner actually needs is the phone
                   ringing with people inside the service area who are ready to buy. That is
                   what gets measured, and it is what the monthly report is built around.
+                </p>
+                <p>
+                  Most people searching for an SEO expert in Pakistan actually need local
+                  search work rather than blog volume: the profile, the map pack and the
+                  citations are what move enquiries. The advantage of hiring a
+                  local SEO specialist Pakistan side is the rate, not a compromise on the work.
                 </p>
                 <p>
                   If the geo-grid shows the revenue gap does not justify a retainer, I will
@@ -551,11 +564,11 @@ export default function Home() {
             <p style={{ fontSize: "1.1rem" }}>
               Send your business name and city. I will run a geo-grid check and a profile audit
               and tell you what is actually wrong, including if the answer is that you do not
-              need to hire anyone.
+              need to hire a Local SEO Expert in Pakistan at all.
             </p>
             <div className="btn-row">
               <a className="btn btn-primary" href={gmail} target="_blank" rel="noopener nofollow">
-                Email Me for Free GMB Audit
+                Email Me for a Free Profile Audit
               </a>
               <a className="btn btn-ghost" href={wa} rel="nofollow">Message me on WhatsApp</a>
             </div>
