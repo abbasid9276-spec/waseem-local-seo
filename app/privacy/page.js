@@ -3,9 +3,9 @@ import Footer from "../../components/Footer";
 import { site } from "../../lib/site";
 
 export const metadata = {
-  title: "Privacy Policy | Waseem Ranker",
+  title: "Privacy Policy | How Your Data Is Handled on This Site",
   description:
-    "What data this site and this consultancy collect, why, how long it is kept, who it is shared with, and how to have it deleted.",
+    "What this site collects, what it does not, how enquiries and client data are stored, and how to ask for any of it to be removed. Plain English.",
   alternates: { canonical: "/privacy" },
   robots: { index: true, follow: true },
 };
