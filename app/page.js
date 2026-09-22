@@ -183,13 +183,14 @@ export default function Home() {
               <span className="pill">
                 47+ businesses &nbsp;·&nbsp; 13 profiles recovered &nbsp;·&nbsp; 27 countries
               </span>
-              <p className="eyebrow">Local SEO</p>
+              <p className="eyebrow">SEMrush Certified</p>
               <h1>Local SEO Expert in Pakistan</h1>
               <p className="lede">
-                I am a Pakistani local SEO expert who gets businesses into the Google map
-                pack, and into the AI answers that now sit above it. Published pricing,
-                evidence you can check, and no promise of a number one ranking, because
-                nobody can honestly make one.
+                I am a Pakistani local SEO expert. I get businesses into the local pack on
+                the search results page, their website ranking at the top of the organic
+                results underneath it, and their name into the AI answers now sitting above
+                both. Published pricing, evidence you can check, and no promise of a number
+                one ranking, because nobody can honestly make one.
               </p>
               <div className="btn-row">
                 <a className="btn btn-primary" href={`https://wa.me/${site.whatsapp}`} target="_blank" rel="noopener nofollow">
@@ -326,9 +327,16 @@ export default function Home() {
                 <h2>What a Local SEO Expert in Pakistan actually changes</h2>
                 <div className="rule" />
                 <p>
-                  Rankings are a means. What a business owner actually needs is the phone
-                  ringing with people inside the service area who are ready to buy. That is
-                  what gets measured, and it is what the monthly report is built around.
+                  Local search is not one box on a map. It is the local pack sitting near the
+                  top of the results page, the organic listings directly underneath it that
+                  most people actually click, and increasingly the AI answer above both. A
+                  business that owns all three is very hard to compete with.
+                </p>
+                <p>
+                  So the work covers the profile and the website together. Winning the local
+                  pack without a site that ranks organically leaves half the page, and half
+                  the enquiries, to a competitor. What gets measured is the phone ringing
+                  with people inside your service area who are ready to buy.
                 </p>
                 <p>
                   Most people searching for an SEO expert in Pakistan actually need local
@@ -348,10 +356,10 @@ export default function Home() {
                 <div className="card rowcard">
                   <span className="ibadge">{I.grid}</span>
                   <div>
-                    <h3>Measured across your whole radius</h3>
+                    <h3>Local pack and organic, not one or the other</h3>
                     <p>
-                      A single-point rank check is the least representative number available.
-                      The geo-grid shows where your visibility actually falls away.
+                      Profile work and on-page work run together, so you hold a position in
+                      the local pack and in the organic results beneath it on the same search.
                     </p>
                   </div>
                 </div>
