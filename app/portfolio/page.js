@@ -17,16 +17,16 @@ const DIMS = {
 };
 
 export const metadata = {
-  title: "Client Results & Case Studies | Waseem Ranker",
+  title: "Client Results & Case Studies | Dated Screenshots Inside",
   description:
-    "Real client results from Google Search Console, Google Business Profile, Bing and GA4: map pack rankings, steady enquiry flow and consistent customers for local service businesses.",
+    "Eight engagements with the dated screenshots and account exports behind them. Clicks, impressions, calls and direction requests, not promises.",
   alternates: { canonical: "/portfolio" },
   openGraph: {
     type: "website",
     url: `${site.url}/portfolio`,
-    title: "Client Results & Case Studies | Waseem Ranker",
+    title: "Client Results & Case Studies | Dated Screenshots Inside",
     description:
-      "Dated screenshots from client accounts. Clicks, impressions, direction requests and engagement, and what each one meant for the business.",
+      "Eight engagements with the dated screenshots and account exports behind them. Clicks, impressions, calls and direction requests, not promises.",
   },
 };
 
