@@ -461,11 +461,13 @@ footer p { color: #a9c4bc; }
 }
 
 /* LinkedIn button in the primary nav */
-.btn-linkedin {
+.btn-linkedin,
+.nav > a.btn-linkedin,
+.nav > a.btn-linkedin:hover {
   background: #0077B5; color: #fff;
   box-shadow: 0 8px 22px rgba(0, 119, 181, .28);
 }
-.btn-linkedin:hover { background: #00669c; color: #fff; }
+.btn-linkedin:hover, .nav > a.btn-linkedin:hover { background: #00669c; color: #fff; }
 @media (max-width: 860px) { .nav > a.btn-linkedin { font-size: .74rem; padding: 10px 16px; } }
 
 /* Floating service CTA on link-list posts */
