@@ -8,7 +8,15 @@ export default function Footer() {
       <div className="wrap">
         <div className="grid g4">
           <div>
-            <h4>{site.brand}</h4>
+            <a className="foot-brand" href="/">
+              <img
+                src="/img/logo/image.png"
+                width="512"
+                height="512"
+                alt={`${site.brand} logo`}
+              />
+              <span>{site.brand}</span>
+            </a>
             <p style={{ fontSize: ".92rem", color: "#9aa3ae" }}>
               Map pack, organic and AI search work for single-location businesses,
               multi-location groups and agencies who need delivery under their own
