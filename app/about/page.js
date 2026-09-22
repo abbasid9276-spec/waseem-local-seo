@@ -3,16 +3,16 @@ import Footer from "../../components/Footer";
 import { site } from "../../lib/site";
 
 export const metadata = {
-  title: "About Waseem Abbas | Waseem Ranker",
+  title: "About Waseem Ranker | The Person Who Does the Work",
   description:
-    "Who I am, how I work, which business categories I have the most experience in, and what you are actually buying when you hire a single practitioner instead of an agency.",
+    "Who I am, how I work and why the numbers on this site can be checked. One consultant, published pricing, no account managers and no guarantees.",
   alternates: { canonical: "/about" },
   openGraph: {
     type: "profile",
     url: `${site.url}/about`,
-    title: "About Waseem Abbas | Waseem Ranker",
+    title: "About Waseem Ranker | The Person Who Does the Work",
     description:
-      "Five years in local search across 19 business verticals and 27+ countries. How I work, and who I am a bad fit for.",
+      "Who I am, how I work and why the numbers on this site can be checked. One consultant, published pricing, no account managers and no guarantees.",
   },
 };
 
