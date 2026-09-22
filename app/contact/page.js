@@ -3,16 +3,16 @@ import Footer from "../../components/Footer";
 import { site, overlap } from "../../lib/site";
 
 export const metadata = {
-  title: "Contact | Waseem Ranker",
+  title: "Contact Waseem Ranker | Get a Free Profile Audit Now",
   description:
-    "Email, WhatsApp and working-hours overlap for the UK, US, Gulf and Australia. What to send on the first message, what happens next, and what the free audit does and does not cover.",
+    "Reach me by WhatsApp, email or phone. Send your business name and city and I will audit your Google Business Profile before we talk about money.",
   alternates: { canonical: "/contact" },
   openGraph: {
     type: "website",
     url: `${site.url}/contact`,
-    title: "Contact | Waseem Ranker",
+    title: "Contact Waseem Ranker | Get a Free Profile Audit Now",
     description:
-      "How to reach me, what to include in your first message, and what happens in the first week of an engagement.",
+      "Reach me by WhatsApp, email or phone. Send your business name and city and I will audit your Google Business Profile before we talk about money.",
   },
 };
 
