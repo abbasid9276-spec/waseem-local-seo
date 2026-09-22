@@ -1,4 +1,5 @@
 import { site } from "../lib/site";
+import { services } from "../lib/services";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -17,13 +18,11 @@ export default function Footer() {
           <div>
             <h4>Services</h4>
             <ul>
-              <li>Google Business Profile management</li>
-              <li>Profile suspension recovery</li>
-              <li>Map pack &amp; geo-grid ranking</li>
-              <li>Citation &amp; NAP cleanup</li>
-              <li>AI Overview visibility</li>
-              <li>Multi-location local SEO</li>
-              <li>White label for agencies</li>
+              {services.map((s) => (
+                <li key={s.slug}>
+                  <a href={`/${s.slug}`}>{s.nav}</a>
+                </li>
+              ))}
               <li><a href="/portfolio">Results &amp; case studies</a></li>
             </ul>
           </div>
