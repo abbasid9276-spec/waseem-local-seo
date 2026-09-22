@@ -6,6 +6,14 @@ export default function Header() {
     <header className="site-head">
       <div className="wrap">
         <a className="brand" href="/">
+          <img
+            className="brand-mark"
+            src="/img/logo/image.png"
+            width="512"
+            height="512"
+            alt=""
+            aria-hidden="true"
+          />
           {site.brand}
         </a>
         <nav className="nav" aria-label="Primary">
