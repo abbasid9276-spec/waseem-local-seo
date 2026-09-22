@@ -12,16 +12,16 @@ import {
 import { services } from "../lib/services";
 
 export const metadata = {
-  title: "Local SEO Expert in Pakistan | Map Pack & AI Search by Waseem Ranker",
+  title: "Local SEO Expert in Pakistan | Let's Grow Your Business",
   description:
-    "Local SEO consultant in Pakistan working with businesses and agencies in the UK, US, Gulf and Australia. Google Business Profile, map pack rankings, suspension recovery and AI Overview visibility. Published pricing, no guarantees.",
+    "Local SEO expert in Pakistan helping businesses rank higher on Google Maps and search. Let's boost your visibility and bring in more customers.",
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: site.url,
-    title: "Local SEO Expert in Pakistan | Waseem Ranker",
+    title: "Local SEO Expert in Pakistan | Let's Grow Your Business",
     description:
-      "Map pack rankings, Google Business Profile recovery and AI search visibility. Published pricing. Evidence, not guarantees.",
+      "Local SEO expert in Pakistan helping businesses rank higher on Google Maps and search. Let's boost your visibility and bring in more customers.",
     locale: "en_US",
   },
 };
