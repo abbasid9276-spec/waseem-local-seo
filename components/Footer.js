@@ -13,9 +13,8 @@ export default function Footer() {
                 src="/img/logo/image.png"
                 width="512"
                 height="512"
-                alt={`${site.brand} logo`}
+                alt={site.brand}
               />
-              <span>{site.brand}</span>
             </a>
             <p style={{ fontSize: ".92rem", color: "#9aa3ae" }}>
               Map pack, organic and AI search work for single-location businesses,
