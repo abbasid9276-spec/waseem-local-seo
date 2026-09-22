@@ -558,7 +558,44 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 13 ── CTA ─────────────────────────────────────────── */}
+        {/* 13 ── CREDENTIALS ─────────────────────────────────── */}
+        <section>
+          <div className="wrap">
+            <div className="split">
+              <div>
+                <p className="eyebrow">Credentials</p>
+                <h2>Semrush certified</h2>
+                <div className="rule" />
+                <p>
+                  Certification is not a ranking factor and I will not pretend otherwise.
+                  What it does show is that the method here is built on current practice
+                  rather than advice that stopped being true three algorithm updates ago.
+                </p>
+                <p>
+                  The exam covers on-page SEO and AI search: the same two things this site
+                  is built around, since being named in an AI answer now matters as much as
+                  sitting in the map pack.
+                </p>
+                <ul>
+                  <li>On-Page SEO and AI Search Essentials with Semrush</li>
+                  <li>Certificate of completion feb90c7f98, exam id-25</li>
+                  <li>Valid to 27 July 2027</li>
+                </ul>
+              </div>
+              <figure className="shot" style={{ margin: 0 }}>
+                <img
+                  src="/img/semrush-certificate/image.png"
+                  width="1128"
+                  height="733"
+                  loading="lazy"
+                  alt="Semrush Academy certificate awarded to Waseem Abbas for On-Page SEO and AI Search Essentials with Semrush, valid to 27 July 2027."
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        {/* 14 ── CTA ─────────────────────────────────────────── */}
         <section className="cta-band">
           <div className="wrap">
             <h2>Want to know what your own numbers look like?</h2>
