@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
   const post = getPost(slug);
   if (!post) return {};
   return {
-    title: `${post.title} | WaseemRanker`,
+    title: `${post.title} | Waseem Ranker`,
     description: post.excerpt,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
