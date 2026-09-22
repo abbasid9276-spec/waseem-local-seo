@@ -111,7 +111,7 @@ section { padding: 84px 0; }
   text-decoration: none; color: var(--brand-900);
   display: inline-flex; align-items: center; gap: 10px;
 }
-.brand-mark { width: 34px; height: 34px; flex: 0 0 34px; display: block; }
+.brand-mark { width: 44px; height: 44px; flex: 0 0 44px; display: block; }
 
 /* footer logo lockup */
 .foot-brand {
@@ -119,16 +119,15 @@ section { padding: 84px 0; }
   text-decoration: none; margin-bottom: 1.1rem;
 }
 .foot-brand img {
-  width: 34px; height: 34px; flex: 0 0 34px; display: block;
-  background: #fff; border-radius: 7px; padding: 3px;
+  width: 44px; height: 44px; flex: 0 0 44px; display: block;
+  background: #fff; border-radius: 9px; padding: 4px;
 }
 .foot-brand span {
   color: #fff; font-size: .82rem; font-weight: 700;
   letter-spacing: .12em; text-transform: uppercase;
 }
 @media (max-width: 480px) {
-  .brand { font-size: 1.16rem; gap: 8px; }
-  .brand-mark { width: 30px; height: 30px; flex: 0 0 30px; }
+  .brand-mark { width: 39px; height: 39px; flex: 0 0 39px; }
 }
 .nav { margin-left: auto; display: flex; gap: 26px; align-items: center; flex-wrap: wrap; }
 .nav > a, .drop-trigger {
