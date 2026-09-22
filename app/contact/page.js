@@ -3,14 +3,14 @@ import Footer from "../../components/Footer";
 import { site, overlap } from "../../lib/site";
 
 export const metadata = {
-  title: "Contact | WaseemRanker",
+  title: "Contact | Waseem Ranker",
   description:
     "Email, WhatsApp and working-hours overlap for the UK, US, Gulf and Australia. What to send on the first message, what happens next, and what the free audit does and does not cover.",
   alternates: { canonical: "/contact" },
   openGraph: {
     type: "website",
     url: `${site.url}/contact`,
-    title: "Contact | WaseemRanker",
+    title: "Contact | Waseem Ranker",
     description:
       "How to reach me, what to include in your first message, and what happens in the first week of an engagement.",
   },
