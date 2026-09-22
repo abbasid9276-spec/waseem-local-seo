@@ -105,10 +105,15 @@ export default function ServicePage({ service: s }) {
                 target="_blank"
                 rel="noopener nofollow"
               >
-                WhatsApp Now
+                WhatsApp Me
               </a>
-              <a className="btn btn-white" href="/contact">
-                Other ways to reach me
+              <a
+                className="btn btn-white"
+                href={gmail}
+                target="_blank"
+                rel="noopener nofollow"
+              >
+                Email Now
               </a>
             </div>
           </div>
