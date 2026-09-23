@@ -602,3 +602,25 @@ footer p { color: #a9c4bc; }
   }
   .site-head .nav { height: 100dvh; padding-top: 88px; }
 }
+
+
+/* Floating WhatsApp pill: keep it clear of the phone's home indicator and the
+   browser's bottom bar, and above everything except the open nav panel. */
+.floatcta {
+  z-index: 70;
+  bottom: calc(20px + env(safe-area-inset-bottom, 0px));
+  right: calc(20px + env(safe-area-inset-right, 0px));
+  max-width: calc(100vw - 24px);
+}
+@media (max-width: 560px) {
+  .floatcta {
+    bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    right: calc(12px + env(safe-area-inset-right, 0px));
+    padding: 8px 15px 8px 9px;
+  }
+  .floatcta svg { width: 34px; height: 34px; flex: 0 0 34px; }
+  .floatcta b { font-size: .9rem; }
+  .floatcta small { font-size: .62rem; }
+}
+/* The open menu should sit above it, not the other way round. */
+.site-head.nav-open ~ * .floatcta { z-index: 70; }
