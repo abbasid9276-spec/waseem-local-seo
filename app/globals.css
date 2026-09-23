@@ -665,3 +665,22 @@ footer p { color: #a9c4bc; }
 .floatcta { z-index: 200; }
 body:has(.site-head.nav-open) .floatcta { opacity: 0; pointer-events: none; }
 body:has(.wa-invite-backdrop) .floatcta { opacity: 0; pointer-events: none; }
+
+
+/* The closed nav panel was parked off the right edge with a transform, which
+   mobile browsers count towards page width: the page became horizontally
+   scrollable and anything anchored with right: landed outside the screen.
+   Take it out of rendering entirely until it is open. */
+html { overflow-x: clip; }
+
+@media (max-width: 960px) {
+  .site-head .nav {
+    visibility: hidden;
+    transition: transform .26s ease, visibility 0s linear .26s;
+  }
+  .site-head.nav-open .nav {
+    visibility: visible;
+    transition: transform .26s ease, visibility 0s;
+  }
+  .nav-scrim { max-width: 100vw; }
+}
