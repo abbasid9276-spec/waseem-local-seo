@@ -37,7 +37,11 @@ export default function WhatsAppInvite() {
       if (e.key === "Escape") close();
     }
     document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
   }, [open]);
 
   if (!open) return null;
