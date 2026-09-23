@@ -624,3 +624,37 @@ footer p { color: #a9c4bc; }
 }
 /* The open menu should sit above it, not the other way round. */
 .site-head.nav-open ~ * .floatcta { z-index: 70; }
+
+
+/* WhatsApp channel invite on small screens: a bottom sheet rather than a
+   centred card, so it never runs off under the browser's bottom bar. */
+.wa-invite-backdrop { height: 100dvh; overflow-y: auto; }
+
+@media (max-width: 620px) {
+  .wa-invite-backdrop {
+    align-items: flex-end;
+    padding: 0;
+  }
+  .wa-invite {
+    max-width: none;
+    width: 100%;
+    border-radius: 22px 22px 0 0;
+    padding: 28px 20px calc(24px + env(safe-area-inset-bottom, 0px));
+    animation-name: wa-sheet;
+  }
+  .wa-invite-icon { width: 52px; height: 52px; margin-bottom: 14px; }
+  .wa-invite h3 { font-size: 1.2rem; }
+  .wa-invite p { font-size: .92rem; max-width: none; margin-bottom: 1.25rem; }
+  .wa-invite-close {
+    top: 8px; right: 10px;
+    width: 40px; height: 40px; padding: 0;
+    font-size: 1.5rem; line-height: 1;
+  }
+  .wa-invite-actions .btn { padding: 15px 22px; }
+  .wa-invite-later { padding: 10px; }
+}
+
+@keyframes wa-sheet {
+  from { transform: translateY(24px); opacity: 0; }
+  to   { transform: translateY(0); opacity: 1; }
+}
