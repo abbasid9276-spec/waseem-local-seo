@@ -658,3 +658,10 @@ footer p { color: #a9c4bc; }
   from { transform: translateY(24px); opacity: 0; }
   to   { transform: translateY(0); opacity: 1; }
 }
+
+
+/* Make sure nothing can paint over the WhatsApp pill, and let the open
+   mobile menu take priority over it instead of fighting it. */
+.floatcta { z-index: 200; }
+body:has(.site-head.nav-open) .floatcta { opacity: 0; pointer-events: none; }
+body:has(.wa-invite-backdrop) .floatcta { opacity: 0; pointer-events: none; }
