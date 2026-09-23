@@ -684,3 +684,24 @@ html { overflow-x: clip; }
   }
   .nav-scrim { max-width: 100vw; }
 }
+
+
+/* A transformed off-screen box still counts towards scrollWidth on mobile, so
+   the panel never leaves the viewport now: it fades in place instead of
+   sliding in from outside. No horizontal overflow, nothing pushed off-screen. */
+@media (max-width: 960px) {
+  .site-head .nav {
+    transform: none;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity .2s ease, visibility 0s linear .2s;
+  }
+  .site-head.nav-open .nav {
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity .2s ease, visibility 0s;
+  }
+}
