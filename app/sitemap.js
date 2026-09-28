@@ -1,6 +1,7 @@
 import { site } from "../lib/site";
 import { posts } from "../lib/blog";
 import { services } from "../lib/services";
+import { cities } from "../lib/cities";
 
 export default function sitemap() {
   const now = new Date();
@@ -13,6 +14,12 @@ export default function sitemap() {
     { url: `${site.url}/privacy`, lastModified: now, changeFrequency: "yearly", priority: 0.2 },
     ...services.map((sv) => ({
       url: `${site.url}/${sv.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    })),
+    ...cities.map((c) => ({
+      url: `${site.url}/${c.slug}`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.8,
