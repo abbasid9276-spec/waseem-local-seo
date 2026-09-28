@@ -2,13 +2,38 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { site } from "../lib/site";
 import { services } from "../lib/services";
-import { cities } from "../lib/cities";
+import { cities, cityStats } from "../lib/cities";
 
 // Shared renderer for every city page.
+//
+// Laid out with the same section system as the homepage: a hero, a stat
+// band, alternating bands, card grids and numbered step rows, rather than
+// one long column of prose.
 //
 // City pages live at the site root: /local-seo-expert-in-lahore, not
 // /locations/lahore. There is no locations hub, so nothing should imply
 // one in the URL.
+
+const STEP_TITLES = [
+  "Start with the map, not a proposal",
+  "Then the unglamorous work",
+  "Evidence, not promises",
+];
+
+function Dot() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="2" />
+      <path
+        d="M8 12.5l2.5 2.5L16 9.5"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
 
 export function buildCityMetadata(c) {
   return {
@@ -85,6 +110,10 @@ function schema(c) {
 
 export default function CityPage({ city: c }) {
   const others = cities.filter((x) => x.slug !== c.slug);
+  const problems = c.body[0];
+  const fit = c.body[1];
+  const process = c.body[2];
+
   const gmail =
     "https://mail.google.com/mail/?view=cm&fs=1&to=" +
     encodeURIComponent(site.email) +
@@ -102,7 +131,7 @@ export default function CityPage({ city: c }) {
       <Header />
       <main>
         <section className="hero">
-          <div className="wrap" style={{ maxWidth: "820px" }}>
+          <div className="wrap" style={{ maxWidth: "860px" }}>
             <p className="eyebrow">{c.city}</p>
             <h1>{c.h1}</h1>
             <p className="lede">{c.excerpt}</p>
@@ -128,27 +157,110 @@ export default function CityPage({ city: c }) {
         </section>
 
         <section>
-          <div className="wrap" style={{ maxWidth: "820px" }}>
-            {c.intro.map((t, i) => (
-              <p key={i}>{t}</p>
-            ))}
+          <div className="wrap">
+            <div className="grid g4 stat-band">
+              {cityStats.map((s) => (
+                <div className="stat" key={s.label}>
+                  <b>{s.b}</b>
+                  <span>{s.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
-            {c.body.map((sec) => (
-              <div key={sec.h}>
-                <h2>{sec.h}</h2>
-                {sec.p.map((t, i) => (
+        <section className="alt">
+          <div className="wrap">
+            <div className="split">
+              <div>
+                <p className="eyebrow">The market</p>
+                <h2>Local SEO in {c.city} is its own problem</h2>
+                <div className="rule"></div>
+                {c.intro.map((t, i) => (
                   <p key={i}>{t}</p>
                 ))}
-                {(sec.items || []).map((it) => (
-                  <div key={it.n}>
-                    <h3>{it.n}</h3>
-                    <p>{it.p}</p>
-                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="wrap">
+            <h2>{problems.h}</h2>
+            {problems.p.map((t, i) => (
+              <p key={i} className="note">
+                {t}
+              </p>
+            ))}
+            <div className="grid g3">
+              {(problems.items || []).map((it) => (
+                <div className="card" key={it.n}>
+                  <span className="ibadge">
+                    <Dot />
+                  </span>
+                  <h3>{it.n}</h3>
+                  <p>{it.p}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="alt">
+          <div className="wrap">
+            <div className="split">
+              <div>
+                <p className="eyebrow">Best fit</p>
+                <h2>{fit.h}</h2>
+                <div className="rule"></div>
+                {fit.p.map((t, i) => (
+                  <p key={i}>{t}</p>
                 ))}
               </div>
-            ))}
+            </div>
+          </div>
+        </section>
 
-            <h2>Common questions</h2>
+        <section>
+          <div className="wrap">
+            <h2>{process.h}</h2>
+            {process.p.map((t, i) => (
+              <div className="steprow" key={i}>
+                <div>
+                  <span className="stepnum">{i + 1}</span>
+                  <h3>{STEP_TITLES[i] || "Next"}</h3>
+                  <div className="rule"></div>
+                  <p>{t}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="alt">
+          <div className="wrap">
+            <h2>What the work involves</h2>
+            <p className="note">
+              Every engagement in {c.city} is assembled from these. The audit
+              decides which of them you actually need.
+            </p>
+            <div className="grid g3">
+              {services.map((s) => (
+                <a className="card" href={`/${s.slug}`} key={s.slug}>
+                  <span className="ibadge">
+                    <Dot />
+                  </span>
+                  <h3>{s.nav}</h3>
+                  <p>{s.excerpt}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div className="wrap" style={{ maxWidth: "860px" }}>
+            <h2>Straight answers</h2>
             {c.faqs.map((f) => (
               <details key={f.q}>
                 <summary>{f.q}</summary>
@@ -157,24 +269,23 @@ export default function CityPage({ city: c }) {
                 </div>
               </details>
             ))}
+          </div>
+        </section>
 
-            <h2>What the work involves</h2>
-            <ul>
-              {services.map((s) => (
-                <li key={s.slug}>
-                  <a href={`/${s.slug}`}>{s.nav}</a>
-                </li>
-              ))}
-            </ul>
-
-            <h2>Other cities</h2>
-            <ul>
+        <section className="alt">
+          <div className="wrap">
+            <h2>Other cities I work in</h2>
+            <div className="grid g3">
               {others.map((o) => (
-                <li key={o.slug}>
-                  <a href={`/${o.slug}`}>{o.h1}</a>
-                </li>
+                <a className="card" href={`/${o.slug}`} key={o.slug}>
+                  <span className="ibadge">
+                    <Dot />
+                  </span>
+                  <h3>{o.h1}</h3>
+                  <p>{o.excerpt}</p>
+                </a>
               ))}
-            </ul>
+            </div>
           </div>
         </section>
 
@@ -182,9 +293,10 @@ export default function CityPage({ city: c }) {
           <div className="wrap">
             <h2>Want to see where you actually rank in {c.city}?</h2>
             <p style={{ fontSize: "1.1rem" }}>
-              Send your business name and the area you serve. I will run a geo-grid
-              check and a profile audit and tell you what is genuinely wrong,
-              including if the answer is that you do not need to hire anyone.
+              Send your business name and the area you serve. I will run a
+              geo-grid check and a profile audit and tell you what is genuinely
+              wrong, including if the answer is that you do not need to hire
+              anyone.
             </p>
             <div className="btn-row">
               <a
