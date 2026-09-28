@@ -14,10 +14,10 @@ export function buildCityMetadata(c) {
   return {
     title: c.title,
     description: c.description,
-    alternates: { canonical: `/${D}{c.slug}` },
+    alternates: { canonical: `/${c.slug}` },
     openGraph: {
       type: "website",
-      url: `${D}{site.url}/${D}{c.slug}`,
+      url: `${site.url}/${c.slug}`,
       title: c.title,
       description: c.description,
     },
@@ -25,17 +25,17 @@ export function buildCityMetadata(c) {
 }
 
 function schema(c) {
-  const url = `${D}{site.url}/${D}{c.slug}`;
+  const url = `${site.url}/${c.slug}`;
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Service",
-        "@id": `${D}{url}#service`,
+        "@id": `${url}#service`,
         name: c.h1,
         description: c.description,
         serviceType: "Local SEO",
-        provider: { "@id": `${D}{site.url}/#business` },
+        provider: { "@id": `${site.url}/#business` },
         areaServed: {
           "@type": "City",
           name: c.city,
@@ -55,16 +55,16 @@ function schema(c) {
       },
       {
         "@type": "WebPage",
-        "@id": `${D}{url}#page`,
+        "@id": `${url}#page`,
         url,
         name: c.h1,
-        isPartOf: { "@id": `${D}{site.url}/#website` },
-        about: { "@id": `${D}{url}#service` },
-        breadcrumb: { "@id": `${D}{url}#breadcrumb` },
+        isPartOf: { "@id": `${site.url}/#website` },
+        about: { "@id": `${url}#service` },
+        breadcrumb: { "@id": `${url}#breadcrumb` },
       },
       {
         "@type": "BreadcrumbList",
-        "@id": `${D}{url}#breadcrumb`,
+        "@id": `${url}#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: site.url },
           { "@type": "ListItem", position: 2, name: c.h1, item: url },
@@ -72,7 +72,7 @@ function schema(c) {
       },
       {
         "@type": "FAQPage",
-        "@id": `${D}{url}#faq`,
+        "@id": `${url}#faq`,
         mainEntity: c.faqs.map((f) => ({
           "@type": "Question",
           name: f.q,
@@ -109,7 +109,7 @@ export default function CityPage({ city: c }) {
             <div className="btn-row">
               <a
                 className="btn btn-primary"
-                href={`https://wa.me/${D}{site.whatsapp}`}
+                href={`https://wa.me/${site.whatsapp}`}
                 target="_blank"
                 rel="noopener nofollow"
               >
@@ -162,7 +162,7 @@ export default function CityPage({ city: c }) {
             <ul>
               {services.map((s) => (
                 <li key={s.slug}>
-                  <a href={`/${D}{s.slug}`}>{s.nav}</a>
+                  <a href={`/${s.slug}`}>{s.nav}</a>
                 </li>
               ))}
             </ul>
@@ -171,7 +171,7 @@ export default function CityPage({ city: c }) {
             <ul>
               {others.map((o) => (
                 <li key={o.slug}>
-                  <a href={`/${D}{o.slug}`}>{o.h1}</a>
+                  <a href={`/${o.slug}`}>{o.h1}</a>
                 </li>
               ))}
             </ul>
