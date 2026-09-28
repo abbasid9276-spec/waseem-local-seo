@@ -711,3 +711,27 @@ html { overflow-x: clip; }
 html, body { max-width: 100%; overflow-x: clip; }
 img, svg, video, iframe, table, pre { max-width: 100%; }
 .site-head .nav, .floatcta, .wa-invite, .wa-invite-backdrop { max-width: 100vw; }
+
+
+/* On a desktop screen the channel invite should read as a small dialog in the
+   middle of the page, not a full-screen takeover. The backdrop stays (it is
+   what catches a click-outside to dismiss) but it no longer dims or blurs
+   anything, so only the box itself is visible. */
+@media (min-width: 621px) {
+  .wa-invite-backdrop {
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+  .wa-invite {
+    max-width: 380px;
+    padding: 26px 24px 22px;
+    border: 1px solid var(--line);
+    box-shadow: 0 24px 64px rgba(9, 25, 21, .26);
+  }
+  .wa-invite-icon { width: 48px; height: 48px; margin-bottom: 12px; }
+  .wa-invite h3 { font-size: 1.14rem; margin-bottom: .45rem; }
+  .wa-invite p { font-size: .9rem; margin-bottom: 1.15rem; max-width: none; }
+  .wa-invite-actions .btn { padding: 11px 22px; font-size: .88rem; }
+  .wa-invite-later { font-size: .84rem; }
+}
