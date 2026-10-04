@@ -68,7 +68,7 @@ function schema(c) {
             "@type": "PostalAddress",
             addressLocality: c.city,
             addressRegion: c.region,
-            addressCountry: "PK",
+            addressCountry: c.country || "PK",
           },
           geo: {
             "@type": "GeoCoordinates",
