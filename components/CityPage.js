@@ -110,9 +110,14 @@ function schema(c) {
 
 export default function CityPage({ city: c }) {
   const others = cities.filter((x) => x.slug !== c.slug);
-  const problems = c.body[0];
-  const fit = c.body[1];
-  const process = c.body[2];
+
+  // Body sections render themselves: a section carrying `items` becomes a card
+  // grid, the last section becomes numbered step rows, anything else becomes a
+  // split text band. Bands alternate background so the page reads like the
+  // homepage rather than one long column.
+  const last = c.body.length - 1;
+  const layoutFor = (sec, i) =>
+    sec.layout || (sec.items ? "cards" : i === last ? "steps" : "split");
 
   const gmail =
     "https://mail.google.com/mail/?view=cm&fs=1&to=" +
@@ -184,58 +189,66 @@ export default function CityPage({ city: c }) {
           </div>
         </section>
 
-        <section>
-          <div className="wrap">
-            <h2>{problems.h}</h2>
-            {problems.p.map((t, i) => (
-              <p key={i} className="note">
-                {t}
-              </p>
-            ))}
-            <div className="grid g3">
-              {(problems.items || []).map((it) => (
-                <div className="card" key={it.n}>
-                  <span className="ibadge">
-                    <Dot />
-                  </span>
-                  <h3>{it.n}</h3>
-                  <p>{it.p}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="alt">
-          <div className="wrap">
-            <div className="split">
-              <div>
-                <p className="eyebrow">Best fit</p>
-                <h2>{fit.h}</h2>
-                <div className="rule"></div>
-                {fit.p.map((t, i) => (
-                  <p key={i}>{t}</p>
-                ))}
+        {c.body.map((sec, i) => {
+          const layout = layoutFor(sec, i);
+          const alt = i % 2 === 1;
+          return (
+            <section className={alt ? "alt" : undefined} key={sec.h}>
+              <div className="wrap">
+                {layout === "split" ? (
+                  <div className="split">
+                    <div>
+                      {sec.eyebrow && <p className="eyebrow">{sec.eyebrow}</p>}
+                      <h2>{sec.h}</h2>
+                      <div className="rule"></div>
+                      {sec.p.map((t, j) => (
+                        <p key={j}>{t}</p>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <>
+                    <h2>{sec.h}</h2>
+                    {layout === "cards" &&
+                      sec.p.map((t, j) => (
+                        <p className="note" key={j}>
+                          {t}
+                        </p>
+                      ))}
+                    {layout === "cards" && (
+                      <div className="grid g3">
+                        {(sec.items || []).map((it) => (
+                          <div className="card" key={it.n}>
+                            <span className="ibadge">
+                              <Dot />
+                            </span>
+                            <h3>{it.n}</h3>
+                            <p>{it.p}</p>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    {layout === "steps" &&
+                      sec.p.map((t, j) => (
+                        <div className="steprow" key={j}>
+                          <div>
+                            <span className="stepnum">{j + 1}</span>
+                            <h3>
+                              {(sec.steps && sec.steps[j]) ||
+                                STEP_TITLES[j] ||
+                                "Next"}
+                            </h3>
+                            <div className="rule"></div>
+                            <p>{t}</p>
+                          </div>
+                        </div>
+                      ))}
+                  </>
+                )}
               </div>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div className="wrap">
-            <h2>{process.h}</h2>
-            {process.p.map((t, i) => (
-              <div className="steprow" key={i}>
-                <div>
-                  <span className="stepnum">{i + 1}</span>
-                  <h3>{STEP_TITLES[i] || "Next"}</h3>
-                  <div className="rule"></div>
-                  <p>{t}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+            </section>
+          );
+        })}
 
         <section className="alt">
           <div className="wrap">
