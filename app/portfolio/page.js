@@ -132,6 +132,15 @@ export default function Portfolio() {
               </figure>
 
               {c.body.map((p, j) => <p key={j}>{p}</p>)}
+
+              {c.site && (
+                <p className="note">
+                  Live site:{" "}
+                  <a href={c.site} target="_blank" rel="noopener nofollow">
+                    {c.site.replace(/^https?:\/\//, "").replace(/\/$/, "")}
+                  </a>
+                </p>
+              )}
             </div>
           </section>
         ))}
