@@ -735,3 +735,15 @@ img, svg, video, iframe, table, pre { max-width: 100%; }
   .wa-invite-actions .btn { padding: 11px 22px; font-size: .88rem; }
   .wa-invite-later { font-size: .84rem; }
 }
+
+
+/* Plain-text domain under a directory name in citation list posts. Not a
+   link: these are references, not endorsements, and not outbound equity. */
+.domain {
+  margin: -0.5rem 0 0.55rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: .86rem;
+  color: var(--brand-700);
+  letter-spacing: -0.01em;
+  word-break: break-all;
+}
