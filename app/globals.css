@@ -101,8 +101,11 @@ section { padding: 84px 0; }
 /* ── header ───────────────────────────────────────────────── */
 .site-head {
   position: sticky; top: 0; z-index: 40;
-  background: rgba(255,255,255,.94);
-  backdrop-filter: saturate(160%) blur(10px);
+  background: #fff;
+  /* No backdrop-filter here. A filtered element becomes the containing block
+     for its fixed-position descendants, which made the mobile nav panel anchor
+     to the header instead of the viewport. An opaque background achieves the
+     same visual separation with none of that risk. */
   border-bottom: 1px solid var(--line);
 }
 .site-head .wrap { display: flex; align-items: center; gap: 22px; height: 76px; }
