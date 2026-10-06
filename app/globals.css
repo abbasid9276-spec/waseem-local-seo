@@ -747,3 +747,23 @@ img, svg, video, iframe, table, pre { max-width: 100%; }
   letter-spacing: -0.01em;
   word-break: break-all;
 }
+
+
+/* A filtered element becomes the containing block for its fixed-position
+   descendants, which made the slide-in mobile panel anchor to the header
+   instead of the viewport: open the menu halfway down the page and the panel
+   appeared up at the header rather than on screen. The blur is dropped on
+   small screens, and again whenever the menu is open, so the panel can never
+   be captured regardless of which rule survives a future edit. */
+@media (max-width: 960px) {
+  .site-head {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: #fff;
+  }
+}
+.site-head.nav-open {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  background: #fff;
+}
