@@ -135,6 +135,7 @@ export default async function Post({ params }) {
                 {(s.items || []).map((it) => (
                   <div key={it.n}>
                     <h3>{it.n}</h3>
+                    {it.d && <p className="domain">{it.d}</p>}
                     <p>{it.p}</p>
                   </div>
                 ))}
