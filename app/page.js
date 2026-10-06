@@ -228,7 +228,7 @@ export default function Home() {
         {/* 3 ── THREE PILLARS ────────────────────────────────── */}
         <section className="alt">
           <div className="wrap">
-            <div style={{ textAlign: "center", marginBottom: "2.6rem" }}>
+            <div style={{ marginBottom: "2.6rem" }}>
               <p className="eyebrow">What you are buying</p>
               <h2>Three things most providers cannot show you</h2>
               <p style={{ maxWidth: "62ch", margin: "0 auto" }}>
@@ -268,7 +268,7 @@ export default function Home() {
         {/* 4 ── TRUST STRIP ──────────────────────────────────── */}
         <section className="alt">
           <div className="wrap">
-            <div style={{ textAlign: "center", marginBottom: "2.6rem" }}>
+            <div style={{ marginBottom: "2.6rem" }}>
               <p className="eyebrow">Read from live client accounts</p>
               <h2>What the dashboards actually show</h2>
             </div>
@@ -310,7 +310,7 @@ export default function Home() {
                 </figcaption>
               </figure>
             </div>
-            <p className="note" style={{ textAlign: "center", marginTop: "1.6rem" }}>
+            <p className="note" style={{ marginTop: "1.6rem" }}>
               Client names are withheld. I can screen share the live account for any figure
               here, which is the test worth applying to any Local SEO Expert in Pakistan you
               are considering.
@@ -391,7 +391,7 @@ export default function Home() {
         {/* 6 ── SERVICES ─────────────────────────────────────── */}
         <section className="alt" id="services">
           <div className="wrap">
-            <div style={{ textAlign: "center", marginBottom: "2.6rem" }}>
+            <div style={{ marginBottom: "2.6rem" }}>
               <p className="eyebrow">Services</p>
               <h2>What I actually do</h2>
             </div>
@@ -418,7 +418,7 @@ export default function Home() {
         {/* 7 ── PROCESS ──────────────────────────────────────── */}
         <section>
           <div className="wrap">
-            <div style={{ textAlign: "center", marginBottom: "3rem" }}>
+            <div style={{ marginBottom: "3rem" }}>
               <p className="eyebrow">The method</p>
               <h2>How an engagement runs</h2>
             </div>
@@ -439,7 +439,7 @@ export default function Home() {
         {/* 8 ── CASE STUDIES ─────────────────────────────────── */}
         <section className="alt">
           <div className="wrap">
-            <div style={{ textAlign: "center", marginBottom: "2.6rem" }}>
+            <div style={{ marginBottom: "2.6rem" }}>
               <p className="eyebrow">Results</p>
               <h2>Three engagements, three niches</h2>
             </div>
@@ -479,7 +479,7 @@ export default function Home() {
         {/* 9 ── TESTIMONIALS ─────────────────────────────────── */}
         <section>
           <div className="wrap">
-            <div style={{ textAlign: "center", marginBottom: "2.6rem" }}>
+            <div style={{ marginBottom: "2.6rem" }}>
               <p className="eyebrow">In their words</p>
               <h2>What clients say</h2>
             </div>
@@ -500,7 +500,7 @@ export default function Home() {
         {/* 10 ── PRICING ─────────────────────────────────────── */}
         <section className="alt" id="pricing">
           <div className="wrap">
-            <div style={{ textAlign: "center", marginBottom: "2.6rem" }}>
+            <div style={{ marginBottom: "2.6rem" }}>
               <p className="eyebrow">Pricing</p>
               <h2>Published, so you can decide before you call</h2>
             </div>
@@ -553,7 +553,7 @@ export default function Home() {
         {/* 12 ── FAQ ─────────────────────────────────────────── */}
         <section className="alt" id="faq">
           <div className="wrap">
-            <div style={{ textAlign: "center", marginBottom: "2.6rem" }}>
+            <div style={{ marginBottom: "2.6rem" }}>
               <p className="eyebrow">Questions</p>
               <h2>Straight answers</h2>
             </div>
