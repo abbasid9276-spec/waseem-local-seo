@@ -4,6 +4,30 @@ import { site } from "../../../lib/site";
 import { posts, getPost } from "../../../lib/blog";
 import { notFound } from "next/navigation";
 
+// Paragraph text may carry inline links written as [anchor](/path). Posts stay
+// plain strings in lib/blog.js; this turns the markers into real anchors at
+// render time so internal linking does not require JSX in the data files.
+const LINK = /\[([^\]]+)\]\((\/[^)\s]*)\)/g;
+
+function Rich({ text }) {
+  if (typeof text !== "string" || !text.includes("](")) return text;
+  const out = [];
+  let last = 0;
+  let m;
+  LINK.lastIndex = 0;
+  while ((m = LINK.exec(text)) !== null) {
+    if (m.index > last) out.push(text.slice(last, m.index));
+    out.push(
+      <a href={m[2]} key={m.index}>
+        {m[1]}
+      </a>
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) out.push(text.slice(last));
+  return out;
+}
+
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
 }
@@ -85,7 +109,7 @@ export default async function Post({ params }) {
             <h1>{post.h1 || post.title}</h1>
             {(post.heroP || [post.excerpt]).map((t, i) => (
               <p className={i === 0 ? "lede" : undefined} key={i}>
-                {t}
+                <Rich text={t} />
               </p>
             ))}
           </div>
@@ -104,7 +128,9 @@ export default async function Post({ params }) {
               <div key={s.h}>
                 <h2>{s.h}</h2>
                 {s.p.map((t, i) => (
-                  <p key={i}>{t}</p>
+                  <p key={i}>
+                    <Rich text={t} />
+                  </p>
                 ))}
                 {(s.items || []).map((it) => (
                   <div key={it.n}>
