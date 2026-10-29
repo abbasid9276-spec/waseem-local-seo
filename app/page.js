@@ -10,6 +10,7 @@ import {
   disqualifiers,
 } from "../lib/site";
 import { services } from "../lib/services";
+import { cities } from "../lib/cities";
 
 export const metadata = {
   title: "Local SEO Expert in Pakistan | Let's Grow Your Business",
@@ -340,9 +341,12 @@ export default function Home() {
                 </p>
                 <p>
                   Most people searching for an SEO expert in Pakistan actually need local
-                  search work rather than blog volume: the profile, the map pack and the
-                  citations are what move enquiries. The advantage of hiring a
-                  local SEO specialist Pakistan side is the rate, not a compromise on the work.
+                  search work rather than blog volume: the{" "}
+                  <a href="/gmb-optimization">Google Business Profile</a>, the
+                  map pack and the{" "}
+                  <a href="/local-citation-building">citations</a> are what move
+                  enquiries. The advantage of hiring a local SEO specialist
+                  Pakistan side is the rate, not a compromise on the work.
                 </p>
                 <p>
                   If the geo-grid shows the revenue gap does not justify a retainer, I will
@@ -394,6 +398,13 @@ export default function Home() {
             <div style={{ marginBottom: "2.6rem" }}>
               <p className="eyebrow">Services</p>
               <h2>What I actually do</h2>
+              <div className="rule"></div>
+              <p>
+                The local SEO services in Pakistan that actually move enquiries
+                are these five. Each one is sold separately with the price
+                published, so you buy the piece you need instead of a bundle of
+                SEO expert services you never asked for.
+              </p>
             </div>
             <div className="grid g3">
               {services.map((s) => (
@@ -421,6 +432,14 @@ export default function Home() {
             <div style={{ marginBottom: "3rem" }}>
               <p className="eyebrow">The method</p>
               <h2>How an engagement runs</h2>
+              <div className="rule"></div>
+              <p>
+                Hiring a local SEO expert in Pakistan should not mean waiting a
+                month to find out what was done. This is the sequence, and the{" "}
+                <a href="/blog/geo-grid-ranking-vs-single-point">geo-grid</a> is
+                re-run every month against the same points so progress is
+                measured rather than claimed.
+              </p>
             </div>
             {STEPS.map((s, i) => (
               <div className={`steprow${i % 2 === 1 ? " flip" : ""}`} key={s.n}>
@@ -442,6 +461,13 @@ export default function Home() {
             <div style={{ marginBottom: "2.6rem" }}>
               <p className="eyebrow">Results</p>
               <h2>Three engagements, three niches</h2>
+              <div className="rule"></div>
+              <p>
+                A local SEO expert in Pakistan is worth hiring only if the
+                numbers move, so here are three accounts with the dates left on.
+                The full set, including the live client sites, is on the{" "}
+                <a href="/portfolio">results page</a>.
+              </p>
             </div>
             <div className="grid g3">
               {caseStudies.map((c) => (
@@ -503,6 +529,14 @@ export default function Home() {
             <div style={{ marginBottom: "2.6rem" }}>
               <p className="eyebrow">Pricing</p>
               <h2>Published, so you can decide before you call</h2>
+              <div className="rule"></div>
+              <p>
+                Most local SEO services in Pakistan are quoted privately, which
+                makes them impossible to compare. These are the rates, in the
+                open. Every engagement starts with a free{" "}
+                <a href="/gmb-audit">GMB audit</a> so both of us know whether
+                there is a case for the work before any money moves.
+              </p>
             </div>
             <div className="grid g3">
               {pricing.map((p, i) => (
@@ -537,6 +571,11 @@ export default function Home() {
                 <h2>When you should not hire me</h2>
                 <div className="rule" />
                 <p>
+                  Plenty of businesses are sold local SEO services in Pakistan
+                  that they do not need. These are the cases where I will tell
+                  you so.
+                </p>
+                <p>
                   Every one of these costs me work, and every one of them is on this page on
                   purpose. A provider who says yes to all six is telling you something.
                 </p>
@@ -568,7 +607,64 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 13 ── CREDENTIALS ─────────────────────────────────── */}
+        {/* 13 ── COVERAGE ───────────────────────────────────── */}
+        <section className="alt">
+          <div className="wrap">
+            <div style={{ marginBottom: "2.2rem" }}>
+              <p className="eyebrow">Coverage</p>
+              <h2>Local SEO Expert in Pakistan, city by city</h2>
+              <div className="rule"></div>
+              <p>
+                Proximity decides the map pack, so the local SEO services in
+                Pakistan that work in Lahore are not the ones that work in
+                Multan. Each page below covers that market on its own terms:
+                what the competition actually looks like, and what it takes to
+                appear there.
+              </p>
+            </div>
+            <div className="grid g3">
+              {cities.map((c) => (
+                <a
+                  key={c.slug}
+                  className="card"
+                  href={"/" + c.slug}
+                  style={{ textDecoration: "none", display: "block" }}
+                >
+                  <h3>{c.h1}</h3>
+                  <p>{c.excerpt}</p>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 13b ── GUIDES ─────────────────────────────────────── */}
+        <section>
+          <div className="wrap">
+            <div style={{ marginBottom: "2.2rem" }}>
+              <p className="eyebrow">Written guides</p>
+              <h2>The method, published in full</h2>
+              <div className="rule"></div>
+              <p>
+                Everything a local SEO expert in Pakistan should be doing for
+                you is written up here, with the actual steps rather than a
+                sales pitch. Read it and do it yourself if you would rather.
+              </p>
+            </div>
+            <ul className="guidelist">
+              <li><a href="/blog/how-to-do-a-local-seo-audit">How to do a local SEO audit, step by step</a></li>
+              <li><a href="/blog/google-business-profile-categories">Choosing Google Business Profile categories</a></li>
+              <li><a href="/blog/google-review-velocity">Review velocity, and how to build it safely</a></li>
+              <li><a href="/blog/service-area-business-setup">Service area business setup, done properly</a></li>
+              <li><a href="/blog/local-citation-sites-list-pakistan">The citation sites list for Pakistan</a></li>
+              <li><a href="/blog/location-landing-pages">Location pages Google will actually keep</a></li>
+              <li><a href="/blog/google-business-profile-photos-posts">Photos and Posts that earn their place</a></li>
+              <li><a href="/portfolio">Client results, with dated screenshots</a></li>
+            </ul>
+          </div>
+        </section>
+
+        {/* 14 ── CREDENTIALS ─────────────────────────────────── */}
         <section>
           <div className="wrap">
             <div className="split">
