@@ -202,6 +202,32 @@ export default function Home() {
               </div>
             </div>
             <figure className="hero-figure">
+              <div className="hero-badge hero-badge-a">
+                <span className="hero-badge-ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 3l7 3v5c0 4.4-3 8.3-7 10-4-1.7-7-5.6-7-10V6l7-3z" />
+                    <path d="M9 12l2 2 4-4" />
+                  </svg>
+                </span>
+                <span className="hero-badge-txt">
+                  <b>100% White-Hat</b>
+                  <i>SEO Strategies</i>
+                </span>
+              </div>
+              <div className="hero-badge hero-badge-b">
+                <span className="hero-badge-ico" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M16 20v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="3" />
+                    <path d="M22 20v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 4.13A4 4 0 0 1 16 11" />
+                  </svg>
+                </span>
+                <span className="hero-badge-txt">
+                  <b>47+ Businesses</b>
+                  <i>Across 27 countries</i>
+                </span>
+              </div>
               <img src="/img/waseem-abbas/image.webp" width="1080" height="700" fetchPriority="high"
                 alt="Waseem Abbas, local SEO consultant" />
               <figcaption>
