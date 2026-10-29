@@ -340,7 +340,7 @@ export default function Home() {
                   with people inside your service area who are ready to buy.
                 </p>
                 <p>
-                  Most people searching for an SEO expert in Pakistan actually need local
+                  Most people searching for help with search actually need local
                   search work rather than blog volume: the{" "}
                   <a href="/gmb-optimization">Google Business Profile</a>, the
                   map pack and the{" "}
@@ -463,8 +463,8 @@ export default function Home() {
               <h2>Three engagements, three niches</h2>
               <div className="rule"></div>
               <p>
-                A local SEO expert in Pakistan is worth hiring only if the
-                numbers move, so here are three accounts with the dates left on.
+                Any of this is worth paying for only if the numbers move, so
+                here are three accounts with the dates left on.
                 The full set, including the live client sites, is on the{" "}
                 <a href="/portfolio">results page</a>.
               </p>
@@ -703,9 +703,9 @@ export default function Home() {
               <h2>The method, published in full</h2>
               <div className="rule"></div>
               <p>
-                Everything a local SEO expert in Pakistan should be doing for
-                you is written up here, with the actual steps rather than a
-                sales pitch. Read it and do it yourself if you would rather.
+                Everything that should be happening on your account is written
+                up here, with the actual steps rather than a sales pitch. Read
+                it and do it yourself if you would rather.
               </p>
             </div>
             <ul className="guidelist">
