@@ -796,3 +796,49 @@ img, svg, video, iframe, table, pre { max-width: 100%; }
 @media (max-width: 720px) {
   .guidelist { grid-template-columns: 1fr; }
 }
+
+/* ── Hero trust badges ─────────────────────────────── */
+.hero-figure { position: relative; }
+.hero-badge {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: #fff;
+  color: #0f172a;
+  border: 1px solid rgba(2, 6, 23, 0.06);
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.22);
+  max-width: min(220px, 62%);
+}
+.hero-badge-ico {
+  display: grid;
+  place-items: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: rgba(13, 148, 170, 0.12);
+  color: #0d94aa;
+}
+.hero-badge-txt { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+.hero-badge-txt b { font-size: 0.9rem; font-weight: 800; letter-spacing: -0.01em; }
+.hero-badge-txt i { font-style: normal; font-size: 0.74rem; opacity: 0.62; }
+.hero-badge-a { top: 20px; left: -18px; }
+.hero-badge-b { bottom: 26%; right: -18px; }
+
+@media (max-width: 960px) {
+  .hero-badge { padding: 8px 11px; gap: 8px; border-radius: 12px; max-width: min(190px, 60%); }
+  .hero-badge-ico { flex: 0 0 28px; width: 28px; height: 28px; border-radius: 9px; }
+  .hero-badge-txt b { font-size: 0.8rem; }
+  .hero-badge-txt i { font-size: 0.68rem; }
+  .hero-badge-a { top: 10px; left: 8px; }
+  .hero-badge-b { bottom: 24%; right: 8px; }
+}
+
+@media (max-width: 420px) {
+  .hero-badge { max-width: 56%; }
+  .hero-badge-txt i { display: none; }
+}
