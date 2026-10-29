@@ -770,3 +770,29 @@ img, svg, video, iframe, table, pre { max-width: 100%; }
   -webkit-backdrop-filter: none;
   background: #fff;
 }
+
+
+/* Written-guides list on the homepage: two columns of plain links. */
+.guidelist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2px 28px;
+}
+.guidelist li {
+  margin: 0;
+  border-bottom: 1px solid var(--line);
+}
+.guidelist a {
+  display: block;
+  padding: 13px 0;
+  font-weight: 550;
+  color: var(--brand-900);
+  text-decoration: none;
+}
+.guidelist a:hover { color: var(--brand-500); }
+@media (max-width: 720px) {
+  .guidelist { grid-template-columns: 1fr; }
+}
