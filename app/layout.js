@@ -1,5 +1,6 @@
 import "./globals.css";
 import { site } from "../lib/site";
+import WhatsAppInvite from "../components/WhatsAppInvite";
 
 export const metadata = {
   metadataBase: new URL(site.url),
@@ -136,6 +137,9 @@ export default function RootLayout({ children }) {
             <b>Chat on WhatsApp</b>
           </span>
         </a>
+
+        {/* Free GMB audit offer, 30 seconds after arrival, once per session. */}
+        <WhatsAppInvite />
       </body>
     </html>
   );
