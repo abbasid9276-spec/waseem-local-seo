@@ -607,6 +607,63 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 12b ── HIRING ─────────────────────────────────────── */}
+        <section>
+          <div className="wrap" style={{ maxWidth: "860px" }}>
+            <div style={{ marginBottom: "2.2rem" }}>
+              <p className="eyebrow">Before you hire</p>
+              <h2>What to ask an SEO expert in Pakistan</h2>
+              <div className="rule"></div>
+              <p>
+                Four questions that separate someone who will move your
+                enquiries from someone who will send you a monthly PDF. Ask them
+                of me, and ask them of whoever else you are speaking to.
+              </p>
+            </div>
+
+            <h3>Can a top SEO expert in Pakistan show you live accounts?</h3>
+            <p>
+              Not a case study written in Canva. The actual Search Console or
+              Analytics screen, with the date range visible and the property
+              name on it. Mine are on the{" "}
+              <a href="/portfolio">results page</a> with the client sites named,
+              so you can open them and check the work is real.
+            </p>
+
+            <h3>How does an SEO specialist in Pakistan measure the map pack?</h3>
+            <p>
+              If the answer is a rank tracker, the number is close to
+              meaningless: it reports your position at one point, usually your
+              own address, which is the one place you were always going to look
+              good. A{" "}
+              <a href="/blog/geo-grid-ranking-vs-single-point">geo-grid</a>
+              {" "}queries from dozens of points across your real service area
+              and plots where you stop appearing. That boundary is the whole
+              strategic question.
+            </p>
+
+            <h3>What does the best SEO expert in Pakistan charge?</h3>
+            <p>
+              Anyone who will not say until a call is quoting you on what they
+              think you can pay. My rates are published above: USD 270 a month
+              for profile work, USD 390 for profile and website together, USD
+              750 for multi-location. Roughly PKR 75,000 to 210,000 a month at
+              current rates, for reference.
+            </p>
+
+            <h3>Which are the best SEO services Pakistan businesses actually need?</h3>
+            <p>
+              Usually fewer than are being sold. A business invisible in the map
+              pack needs{" "}
+              <a href="/gmb-optimization">profile work</a> and{" "}
+              <a href="/local-citation-building">citations</a>, not a blog
+              package. The free{" "}<a href="/gmb-audit">GMB audit</a> exists to
+              establish which of them you need, and it is also how I tell people
+              they do not need me at all.
+            </p>
+          </div>
+        </section>
+
         {/* 13 ── COVERAGE ───────────────────────────────────── */}
         <section className="alt">
           <div className="wrap">
