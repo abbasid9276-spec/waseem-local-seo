@@ -842,3 +842,8 @@ img, svg, video, iframe, table, pre { max-width: 100%; }
   .hero-badge { max-width: 56%; }
   .hero-badge-txt i { display: none; }
 }
+
+/* badges sit outside the frame, so the frame must not clip them */
+.hero-figure { overflow: visible; }
+.hero-figure > img { border-radius: 22px; }
+.hero-figure > figcaption { border-radius: 0 0 22px 22px; }
