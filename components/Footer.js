@@ -1,6 +1,6 @@
 import { site } from "../lib/site";
 import { services } from "../lib/services";
-import { cities } from "../lib/cities";
+import { footerCities } from "../lib/cities";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -37,7 +37,7 @@ export default function Footer() {
           <div>
             <h4>Locations</h4>
             <ul>
-              {cities.map((c) => (
+              {footerCities.map((c) => (
                 <li key={c.slug}>
                   <a href={`/${c.slug}`}>{c.nav}</a>
                 </li>
